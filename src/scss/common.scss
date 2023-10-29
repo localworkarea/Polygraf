@@ -607,9 +607,9 @@
   // .head-block__link-txt
   &__link-txt {
     &::before {
-      background-color: $mainColor;
+      background-color: $mainColor !important;
       .head-block_dark & {
-        background-color: $white;
+        background-color: $white !important;
       }
     }
   }

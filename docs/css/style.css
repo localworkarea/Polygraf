@@ -577,11 +577,11 @@ summary {
 }
 
 .head-block__link-txt::before {
-  background-color: #0A0A0A;
+  background-color: #0A0A0A !important;
 }
 
 .head-block_dark .head-block__link-txt::before {
-  background-color: #ffffff;
+  background-color: #ffffff !important;
 }
 
 .head-block__link-ic {
