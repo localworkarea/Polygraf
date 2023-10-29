@@ -314,8 +314,8 @@ summary {
   background-color: #D9D9D9;
 }
 
-.border-btm_dark {
-  background-color: rgba(255, 255, 255, 0.2);
+.border-btm_dark::before {
+  background-color: rgba(255, 255, 255, 0.2) !important;
 }
 
 .video-nav {
@@ -553,7 +553,7 @@ summary {
 }
 
 .head-block_dark .head-block::before {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.2) !important;
 }
 
 .head-block_dark .head-block__title {
@@ -1386,9 +1386,9 @@ summary {
   }
 
   .product__link-txt::before {
-    background-color: #0A0A0A;
-    bottom: -0.625rem;
-    height: 0.1875rem;
+    background-color: #0A0A0A !important;
+    bottom: -0.625rem !important;
+    height: 0.1875rem !important;
   }
 
   .product__link-ic {
@@ -1504,6 +1504,14 @@ summary {
     bottom: 0;
   }
 
+  .slide-testimls__item {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    -webkit-column-gap: 5.625rem;
+       -moz-column-gap: 5.625rem;
+            column-gap: 5.625rem;
+  }
+
   .slide-testimls__img-quote {
     margin-bottom: 1.25rem;
   }
@@ -1586,14 +1594,6 @@ summary {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-  }
-
-  .slide-testimls__item {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
-    -webkit-column-gap: 5.625rem;
-       -moz-column-gap: 5.625rem;
-            column-gap: 5.625rem;
   }
 
   .sub-menu {
@@ -2409,7 +2409,7 @@ summary {
 
 @media (max-width: 37.56125em) {
   .testimonials__buttons {
-    top: 14.6875rem;
+    top: 17.5rem;
   }
 
   .slide-testimls__item {
