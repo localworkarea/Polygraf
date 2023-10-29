@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/_head.htm',{
+	"title":"Home | Polygraf"
+	})
+	<body>
+		<div class="wrapper page-home">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<section class="hero">
+					<div class="hero__video">
+						<video width="100%" height="100%" class="hero__video-el" id="heroVideo" muted playsinline poster="@img/photos/hero.jpg" autoplay loop>
+							<source src="files/home_hero.mp4" type="video/mp4"/>
+						</video>
+					</div>
+					<div class="hero__container">
+						<div class="hero__nav-video video-nav">
+							<button id="playPauseButton" class="video-nav__btn">
+								<span class="video-nav__pause">
+									<span>Pause video</span>
+									<img src="@img/icons/paused.svg" alt="paused">
+								</span>
+								<span class="video-nav__play">
+									<span>Play video</span>
+									<img src="@img/icons/play.svg" alt="play">
+								</span>
+							</button>
+							<a href="#" class="video-nav__link _hover-el">
+								<span class="video-nav__txt _hover">Try now</span>
+								<img  class="video-nav__ic color-white " src="@img/icons/arr-angle.svg" alt="arrow">
+							</a>
+						</div>
+						<h1 class="hero__title title-avr">
+							Leverage the Transformative Power of AI.<br> 
+							Safely and Responsibly.
+						</h1>
+					</div>
+				</section>
+				<section class="home-product product bg-prod-green">
+					<div class="product__container">
+						<div class="product__head">
+							<h2 class="product__title title-main">
+								<span>AI Governance</span>
+							</h2>
+						</div>
+						<div class="product__body">
+							<div class="product__about about-prod">
+								<p class="about-prod__big">
+									Minimize risk, data breaches and ethics concerns
+								</p>
+								<p class="about-prod__sm">
+									Harness the potential of AI for your organization while ensuring data privacy, and minimize/prevent data breaches and leaks.
+								</p>
+							</div>
+							<div class="product__spollers spollers-prod">
+								<div class="spollers-prod__head">
+									<h3 class="spollers-prod__title">
+										Product Features
+									</h3>
+								</div>
+								<div data-spollers  data-one-spoller data-spollers-speed="500" class="spollers-prod__body">
+									<details class="spollers-prod__details">
+										<summary class="spollers-prod__summary">
+											<h4>
+												Proprietary AI & Data Governance Solution
+											</h4>
+											<div class="spollers-prod__icon">
+												<img src="@img/icons/arr-up-spoller.svg" alt="arrow">
+											</div>
+										</summary>
+										<div class="spollers-prod__content">
+											<div class="spollers-prod__info">
+												<p>
+													Polygraf’s cutting-edge on-prem solution empowers your employees to leverage commercially available AI tools and automation while maintaining strict adherence to data privacy regulations and ethical guidelines.
+												</p>
+											</div>
+										</div>
+									</details>
+									<details class="spollers-prod__details">
+										<summary class="spollers-prod__summary">
+											<h4>
+												Zero Trust Architecture
+											</h4>
+											<div class="spollers-prod__icon">
+												<img src="@img/icons/arr-up-spoller.svg" alt="arrow">
+											</div>
+										</summary>
+										<div class="spollers-prod__content">
+											<div class="spollers-prod__info">
+												<p>
+													Establishes strong identity verification, validates device compliance prior to granting access, ensures least privilege access to only explicitly authorized resources with continuous trust verification and security inspection.
+												</p>
+											</div>
+										</div>
+									</details>
+									<details class="spollers-prod__details">
+										<summary class="spollers-prod__summary">
+											<h4>
+												Seamless Integration
+											</h4>
+											<div class="spollers-prod__icon">
+												<img src="@img/icons/arr-up-spoller.svg" alt="arrow">
+											</div>
+										</summary>
+										<div class="spollers-prod__content">
+											<div class="spollers-prod__info">
+												<p>
+													Integrates with your existing systems, security stack  and AI tools effortlessly. Polygraf AI Suite is designed for on-prem operations with smooth compatibility, minimizing disruption and maximizing productivity
+												</p>
+											</div>
+										</div>
+									</details>
+									<details class="spollers-prod__details">
+										<summary class="spollers-prod__summary">
+											<h4>
+												Real-time Data Privacy & Confidentiality Protection
+											</h4>
+											<div class="spollers-prod__icon">
+												<img src="@img/icons/arr-up-spoller.svg" alt="arrow">
+											</div>
+										</summary>
+										<div class="spollers-prod__content">
+											<div class="spollers-prod__info">
+												<p>
+													Automatically detects & protects PII/SPI/PCI/PHI or business-critical data with Automatic Personal Information Detection, Customizable Confidentiality Lists & Seamless Entity Replacement, including at point of scan/copy/print.
+												</p>
+											</div>
+										</div>
+									</details>
+									<details class="spollers-prod__details">
+										<summary class="spollers-prod__summary">
+											<h4>
+												Secure Data & Encryption 
+											</h4>
+											<div class="spollers-prod__icon">
+												<img src="@img/icons/arr-up-spoller.svg" alt="arrow">
+											</div>
+										</summary>
+										<div class="spollers-prod__content">
+											<div class="spollers-prod__info">
+												<p>
+													Your data stays local with our on-prem solution – encrypted/masked, processed, and analyzed without ever touching our servers.
+												</p>
+											</div>
+										</div>
+									</details>
+									<details class="spollers-prod__details">
+										<summary class="spollers-prod__summary">
+											<h4>
+												Integration with Large Language Models 
+											</h4>
+											<div class="spollers-prod__icon">
+												<img src="@img/icons/arr-up-spoller.svg" alt="arrow">
+											</div>
+										</summary>
+										<div class="spollers-prod__content">
+											<div class="spollers-prod__info">
+												<p>
+													Enables direct use of the encoded text  for any  LLMs & AI tools as inputs, enabling secure interactions while preserving privacy.
+												</p>
+											</div>
+										</div>
+									</details>
+									<details class="spollers-prod__details">
+										<summary class="spollers-prod__summary">
+											<h4>
+												Multi-Format Input Compatibility
+											</h4>
+											<div class="spollers-prod__icon">
+												<img src="@img/icons/arr-up-spoller.svg" alt="arrow">
+											</div>
+										</summary>
+										<div class="spollers-prod__content">
+											<div class="spollers-prod__info">
+												<p>
+													Supports both text input and scanned/printed documents, providing flexibility for users with different data sources, and incorporation into Scanning and Printing solutions.
+												</p>
+											</div>
+										</div>
+									</details>
+									<details class="spollers-prod__details">
+										<summary class="spollers-prod__summary">
+											<h4>
+												Persistent Encoding and Decoding
+											</h4>
+											<div class="spollers-prod__icon">
+												<img src="@img/icons/arr-up-spoller.svg" alt="arrow">
+											</div>
+										</summary>
+										<div class="spollers-prod__content">
+											<div class="spollers-prod__info">
+												<p>
+													Encode sensitive information, allowing users to use it as input for language models safely. The application stores encoding schemes for future retrieval and restoration of the original data.
+												</p>
+											</div>
+										</div>
+									</details>
+								</div>
+							</div>
+						</div>
+						<div class="product__btm">
+							<div class="product__button">
+								<a href="#" class="product__link _hover-el">
+									<span class="product__link-txt _hover">Product page</span>
+									<span class="product__link-ic">
+										<img src="@img/icons/arr-angle.svg" alt="arrow">
+									</span>
+								</a>
+							</div>
+							<div class="product__image">
+								<img src="@img/el/governance.jpg" alt="icon governance">
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="home-safety bg-main mrb-sect">
+					<div class="home-safety__container">
+						<div class="home-safety__head head-block head-block_dark">
+							<h2 class="head-block__title title-main">
+								<span>Safety</span>
+							</h2>
+							<a href="#" data-da=".home-safety__container,480,3" class="head-block__link link-dark _hover-el">
+								<span class="head-block__link-txt _hover">More about safety</span>
+								<span class="head-block__link-ic">
+									<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+										<path d="M20.9891 10.2584L9.32203 21.9255" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M11.5979 10.2784L20.9892 10.2581L20.9697 19.6501" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</span>
+							</a>
+						</div>
+						<div class="home-safety__sub-head sub-block sub-block_dark">
+							<div class="sub-block__left">
+								<p class="sub-block__big txt-big">
+									Our unified AI protocol enables enhanced Privacy, Productivity & Compliance.
+								</p>
+							</div>
+							<div class="sub-block__right">
+								<p class="sub-block__sm txt-sm">
+									Polygraf stands at the forefront of ensuring a safer, more transparent digital realm.
+								</p>
+							</div>
+						</div>
+						<div class="home-safety__image">
+							<img src="@img/photos/home-safety.jpg" alt="two people">
+						</div>
+					</div>
+				</section>
+				<section class="home-testimonials mrb-sect">
+					<div class="home-testimonials__container">
+						<div class="home-testimonials__head head-block">
+							<h2 class="head-block__title title-main">
+								<span>What they’re saying</span>
+							</h2>
+							<a href="#" data-da=".home-testimonials__container,480,2" class="head-block__link link-light _hover-el">
+								<span class="head-block__link-txt _hover">More about us</span>
+								<span class="head-block__link-ic">
+									<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+										<path d="M20.9891 10.2584L9.32203 21.9255" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M11.5979 10.2784L20.9892 10.2581L20.9697 19.6501" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</span>
+							</a>
+						</div>
+							@@include('html/_testimonials.htm',{})
+					</div>
+				</section>
+				<section class="home-started bg-main mrb-sect">
+					<div class="home-started__container">
+						<div class="get-started">
+							<div class="get-started__head head-block head-block_dark">
+								<h2 class="head-block__title title-main">
+									<span>Get started</span>
+								</h2>
+								<a href="#" class="head-block__link link-dark _hover-el">
+									<span class="head-block__link-txt _hover">All products</span>
+									<span class="head-block__link-ic">
+										<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+											<path d="M20.9891 10.2584L9.32203 21.9255" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M11.5979 10.2784L20.9892 10.2581L20.9697 19.6501" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</span>
+								</a>
+							</div>
+							<div class="get-started__body">
+								<div class="get-started__info">
+									<div class="get-started__block">
+										<p class="get-started__txt-big txt-big">
+											Browse our products.
+										</p>
+										<p class="get-started__txt-sm txt-sm">
+											Polygraf’s AI Governance & Data Integrity Suite is dedicated to creating a reliable and authentic digital ecosystem where humans and machines coexist.
+										</p>
+										<a href="#" class="get-started__btn btn btn_01">Get in touch</a>
+									</div>
+								</div>
+								<div class="get-started__products">
+									<h3 class="get-started__title">
+										Discover all our products:
+									</h3>
+									<ul class="get-started__list list-started">
+										<li class="list-started__item">
+											<a href="#" class="list-started__link">
+												<span class="list-started__img-ic">
+													<img src="@img/icons/governance.svg" alt="icon governance">
+												</span>
+												<span class="list-started__txt">AI Governance</span>
+												<svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36" fill="none">
+													<path d="M24.488 12.4683L10.8764 26.08" stroke="#45F9E3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+													<path d="M13.5311 12.4915L24.4875 12.4679L24.4648 23.4253" stroke="#45F9E3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+												</svg>
+											</a>
+										</li>
+										<li class="list-started__item">
+											<a href="#" class="list-started__link">
+												<span class="list-started__img-ic">
+													<img src="@img/icons/plagiarism.svg" alt="icon plagiarism">
+												</span>
+												<span class="list-started__txt">AI Source Detection</span>
+												<svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36" fill="none">
+													<path d="M24.488 12.4683L10.8764 26.08" stroke="#F747A1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+													<path d="M13.5311 12.4915L24.4875 12.4679L24.4648 23.4253" stroke="#F747A1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+												</svg>
+											</a>
+										</li>
+										<li class="list-started__item">
+											<a href="#" class="list-started__link">
+												<span class="list-started__img-ic">
+													<img src="@img/icons/detection.svg" alt="icon detection">
+												</span>
+												<span class="list-started__txt">AI Identification</span>
+												<svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36" fill="none">
+													<path d="M24.488 12.4683L10.8764 26.08" stroke="#FBBF5B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+													<path d="M13.5311 12.4915L24.4875 12.4679L24.4648 23.4253" stroke="#FBBF5B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+												</svg>
+											</a>
+										</li>
+										<li class="list-started__item">
+											<a href="#" class="list-started__link">
+												<span class="list-started__img-ic">
+													<img src="@img/icons/extension.svg" alt="icon extension">
+												</span>
+												<span class="list-started__txt">ECommerce Trust Engine</span>
+												<svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36" fill="none">
+													<path d="M24.488 12.4683L10.8764 26.08" stroke="#4E79B9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+													<path d="M13.5311 12.4915L24.4875 12.4679L24.4648 23.4253" stroke="#4E79B9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+												</svg>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="home-news">
+					<div class="home-news__container">
+						<div class="home-news__head head-block">
+							<h2 class="head-block__title title-main">
+								<span>News & Updates</span>
+							</h2>
+							<a href="#" class="head-block__link link-light _hover-el">
+								<span class="head-block__link-txt _hover">All</span>
+								<span class="head-block__link-ic">
+									<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+										<path d="M20.9891 10.2584L9.32203 21.9255" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M11.5979 10.2784L20.9892 10.2581L20.9697 19.6501" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</span>
+							</a>
+						</div>
+						<div class="home-news__news-upd news-upd">
+
+							<article class="news-upd__item">
+								<div class="news-upd__data">
+									<div class="news-upd__data-wrap border-btm">
+										<div class="news-upd__category">
+											<p>
+												Media Kit
+											</p>
+										</div>
+										<div class="news-upd__date">
+											<p>
+												<time datetime="2023-07-11">11.07.2023</time>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="news-upd__image">
+									<div class="news-upd__img-body-ibg">
+										<img src="@img/news/01.jpg" alt="image">
+									</div>
+								</div>
+								<div class="news-upd__main">
+									<div class="news-upd__info">
+										<h3>
+											Download Polygraf’s media kit with our latest Press Release
+										</h3>
+										<p>
+											Read our latest reports and and helpful infographics one pager for Polygraf AI
+										</p>
+									</div>
+									<div class="news-upd__button">
+										<a href="@img/news/01.jpg" download="01.jpg" class="news-upd__btn btn btn_03">
+											<span>Download</span>
+											<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+												<path d="M13.9934 6.83949L6.21534 14.6176" stroke-linecap="round" stroke-linejoin="round"/>
+												<path d="M7.73163 6.85272L13.9925 6.83924L13.9795 13.1006" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</article>
+							
+							<article class="news-upd__item">
+								<div class="news-upd__data">
+									<div class="news-upd__data-wrap border-btm">
+										<div class="news-upd__category">
+											<p>
+												Media Kit
+											</p>
+										</div>
+										<div class="news-upd__date">
+											<p>
+												<time datetime="2023-07-11">11.07.2023</time>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="news-upd__image">
+									<div class="news-upd__img-body-ibg">
+										<img src="@img/news/01.jpg" alt="image">
+									</div>
+								</div>
+								<div class="news-upd__main">
+									<div class="news-upd__info">
+										<h3>
+											Download Polygraf’s media kit with our latest Press Release
+										</h3>
+										<p>
+											Read our latest reports and and helpful infographics one pager for Polygraf AI
+										</p>
+									</div>
+									<div class="news-upd__button">
+										<a href="@img/news/01.jpg" download="01.jpg" class="news-upd__btn btn btn_03">
+											<span>Download</span>
+											<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+												<path d="M13.9934 6.83949L6.21534 14.6176" stroke-linecap="round" stroke-linejoin="round"/>
+												<path d="M7.73163 6.85272L13.9925 6.83924L13.9795 13.1006" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</article>
+
+							
+						</div>
+					</div>
+				</section>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>
