@@ -1,3 +1,179 @@
-//====================================================================================================
+.footer {
+  color: $white;
+  @include adaptiveValue("padding-top", 100, 75,0,1920,1440);
+  @include adaptiveValue("padding-top", 75, 40,3,1440,375);
+  padding-bottom: toRem(40);
+  // .footer__container
+  &__container {
+  }
+  // .footer__main
+  &__main {
+    @include adaptiveValue("padding-bottom", 100, 75,0,1920,1440);
+    @include adaptiveValue("padding-bottom", 75, 20,3,1440,375);
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: toRem(40);
+    @media (max-width: em(1250.98)){
+        grid-template-columns: 1fr auto;
+    }
+    @media (max-width: em(750.98)){
+        grid-template-columns: 1fr;
+    }
+  }
+  // .footer__logo-body
+  &__logo-body {
+    @include adaptiveValue("width", 460, 345,0,1920,1440);
+    @media (max-width: em(1250.98)){
+        width: auto !important;
+    }
+  }
+  // .footer__logo
+  &__logo {
+  }
+  // .footer__nav
+  &__nav {
+    display: grid;
+    @media (min-width:em(750.98)){
+      grid-template-columns: minmax(toRem(100), toRem(220)) auto;
+    }
+    @media (max-width: em(1250.98)) and (min-width: em(750.98)){
+        grid-row-start: 2;
+        grid-column-start: 1;
+    }
+    @media (max-width: em(750.98)){
+        grid-template-columns: 1fr 1fr;
+    }
+  }
+  // .footer__block
+  &__block {
+  }
+  // .footer__title
+  &__title {
+    @include adaptiveValue("margin-bottom", 20, 10);
+    // .footer__title_addr {
+      &_addr {
+        display: flex;
+        align-items: center;
+        gap: toRem(5);
+      }
+  }
+  // .footer__list
+  &__list {
+  }
+  // .footer__item
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: toRem(5);
+    }
+  }
+  // .footer__link
+  &__link {
+  }
+  // .footer__address
+  &__address {
+    @media (max-width: em(1250.98)) and (min-width: em(750.98)){
+      grid-row-start: 2;
+      grid-column-start: 2;
+    }
+  }
+	// .footer__address-wrapp
+	&__address-wrapp {
+    @include adaptiveValue("width", 460, 345,0,1920,1440);
+    @media (max-width: em(1250.98)){
+      width: auto !important;
+    }
+	}
+	// .footer__ic
+	&__ic {
+    display: block;
+    @include adaptiveValue("width", 20, 15);
+    @include adaptiveValue("height", 20, 15);
+    svg {
+      width: 100%;
+      height: auto;
+    }
+  }
+  // .footer__addr
+  &__addr {
+    font-style: normal;
+    P {
+      max-width: toRem(274);
+      @include adaptiveValue("font-size", 18, 14);
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.2;
+    }
+  }
 
-//====================================================================================================
+
+  // .footer__bottom
+  &__bottom {
+    padding-top: toRem(20);
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: toRem(40);
+    @media (max-width: em(900.98)){
+        grid-template-columns: 1fr 1fr;
+        row-gap: toRem(20);
+    }
+  }
+  // .footer__policy
+  &__policy {
+    @include adaptiveValue("width", 460, 345,0,1920,1440);
+    @media (max-width: em(900.98)){
+        width: auto !important;
+    }
+  }
+  // .footer__rights
+  &__rights {
+    @include adaptiveValue("font-size", 16, 14);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: toRem(5);
+  }
+  // .footer__privacy
+  &__privacy {
+    @include adaptiveValue("font-size", 16, 14);
+    font-weight: 400;
+    line-height: 1.2;
+  }
+  // .footer__social
+  &__social {
+  }
+  // .footer__btn
+  &__btn {
+    @include adaptiveValue("width", 460, 345,0,1920,1440);
+    @media (max-width: em(1250.98)){
+      width: auto !important;
+    }
+  }
+  // .footer__btn-up
+  &__btn-up {
+    font-size: toRem(16);
+    line-height: normal;
+    letter-spacing: -0.32px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.social-footer {
+  // .social-footer__list
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: toRem(45);
+    row-gap: toRem(5);
+    @media (max-width: em(600.98)){
+        flex-direction: column;
+    }
+  }
+  // .social-footer__item
+  &__item {
+  }
+  // .social-footer__link
+  &__link {
+    @include adaptiveValue("font-size", 16, 14);
+    line-height: 1.2;
+  }
+}

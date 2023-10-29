@@ -23,6 +23,20 @@
   @include adaptiveValue("letter-spacing", -0.6, 0,0,1920,1440);
 }
 
+.txt-sm {
+  @include adaptiveValue("font-size", 18, 16);
+  line-height: normal;
+  @include adaptiveValue("letter-spacing", -0.36, -0.32);
+  // .txt-sm_f-4
+  &_f-4 {
+    font-weight: 400
+  }
+  // .txt-sm_f-4
+  &_f-7 {
+    font-weight: 700
+  }
+}
+
 .mrb-sect {
   @include adaptiveValue("margin-bottom", 220, 165,0,1920,1440);
   @include adaptiveValue("margin-bottom", 165, 40,3,1440,375);
@@ -959,3 +973,293 @@
   }
 }
 // ===================================================================
+
+
+// BLOCK NEWS AND UPDATES ======================================
+.news-upd {
+  // .news-upd__item
+  &__item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr auto;
+    @include adaptiveValue("column-gap", 20, 15,0,1920,1440);
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 60, 45,0,1920,1440);
+      @include adaptiveValue("margin-bottom", 45, 40,3,1440,375);
+    }
+    @media (max-width: em(750.98)){
+        grid-template-columns: 1fr;
+    }
+  }
+  // .news-upd__data
+  &__data {
+    @media (min-width:em(750.98)){
+      grid-column-start: 2;
+    }
+  }
+  // .news-upd__image
+  &__image {
+    @media (min-width:em(750.98)){
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+    @media (max-width: em(750.98)){
+        margin-bottom: toRem(20);
+    }
+  }
+  // .news-upd__main
+  &__main {
+    display: flex;
+    gap: toRem(40);
+    @media (min-width:em(750.98)){
+      grid-column-start: 2;
+    }
+    @media (min-width:$mobileSmall){
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    @media (max-width:$mobileSmall){
+        flex-direction: column;
+    }
+  }
+	// .news-upd__data-wrap
+	&__data-wrap {
+    @include adaptiveValue("padding-bottom", 10, 5);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: toRem(20);
+    p {
+      color: $mainGray;
+      @include adaptiveValue("font-size", 18, 16);
+      font-weight: 400;
+      line-height: normal;
+    }
+	}
+  // .news-upd__category
+  &__category {
+  }
+  // .news-upd__date
+  &__date {
+    p {
+      
+    }
+  }
+  // .news-upd__img-body-ibg
+  &__img-body-ibg {
+    padding-bottom: 50%;
+    @media (min-width:em(750.98)){
+      height: 100%;
+        
+    }
+  }
+  // .news-upd__info
+  &__info {
+    h3 {
+      font-size: 32px;
+      @include adaptiveValue("font-size", 32, 24,0,1920,1440);
+      @include adaptiveValue("font-size", 24, 22,3,1440,375);
+      font-weight: 700;
+      line-height: 1.1;
+      &:not(:last-child) {
+        @include adaptiveValue("margin-bottom", 30, 22);
+        @include adaptiveValue("margin-bottom", 22, 10);
+      }
+    }
+    P {
+      color: $mainGray;
+    }
+    h3, p {
+      @include adaptiveValue("max-width", 440, 330,0,1920,1440);
+      @media (max-width:$mobileSmall){
+         max-width: 100% !important; 
+      }
+    }
+  }
+  // .news-upd__button
+  &__button {
+  }
+  // .news-upd__btn
+  &__btn {
+    height: toRem(45);
+    font-size: toRem(16);
+    
+    path {
+      @media (min-width:em(750.98)){
+        stroke: $mainColor;
+        transition: all .3s ease;
+      }
+      @media (max-width: em(750.98)){
+          stroke: $white;
+      }
+    }
+    @media (any-hover: hover){
+      &:hover{
+        path {
+          stroke: $white;
+        }
+      }
+    }
+    padding: 0 toRem(16);
+    @media (min-width:em(750.98)){
+      width: fit-content;
+    }
+    @media (max-width: em(750.98)){
+        background-color: $mainColor;
+        color: $white;
+    }
+  }
+}
+// ---------------------------------------------------------------
+
+
+// GET IN TOUCH SECTION ==================================================
+.get {
+  position: relative;
+  @include adaptiveValue("min-height", 750, 560,0,1920,1440);
+  @include adaptiveValue("min-height", 560, 450,3,1440,375);
+  background-color: #F1F1F1;
+  // .get__im
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      @include adaptiveValue("width", 2406, 1800,0,1920,1440);
+      @include adaptiveValue("width", 1800, 753,3,1440,375);
+      height: auto;
+    }
+  }
+  // .get__link
+  &__link {
+  }
+	// .get__info
+	&__info {
+    position: absolute;
+    @include adaptiveValue("bottom", 90, 67,0,1920,1440);
+    @include adaptiveValue("bottom", 67, 120,3,769,768);
+    left: 0;
+    width: 100%;
+	}
+	// .get__txt
+	&__txt {
+    margin: 0 auto;
+    text-align: center;
+    @include adaptiveValue("font-size", 18, 16);
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -0.36px;
+    max-width: toRem(330);
+	}
+}
+
+
+.link-get {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  // .link-get__link
+  &__link {
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    &::before {
+      content:"";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 94.5%;
+      @include adaptiveValue("height", 7.5, 2.36);
+      background-color: $mainColor;
+    }
+
+    svg {
+      @include adaptiveValue("width", 136, 102,0,1920,1440);
+      @include adaptiveValue("width", 102, 52,3,1440,375);
+      height: auto;
+    }
+    @media (any-hover: hover){
+      &:hover{
+        .link-get__letter {
+          transform: translateY(-100%);
+        }
+      }
+    }
+  }
+  // .link-get__word
+  &__word {
+    overflow: hidden;
+    display: block;
+    text-shadow: 0 toRem(127) 0 $mainColor;
+    @media (max-width: em(1670.98)){
+      text-shadow: 0 toRem(110) 0 $mainColor;
+    }
+    @media (max-width: em(1440.98)){
+      text-shadow: 0 toRem(95) 0 $mainColor;
+    }
+    @media (max-width: em(1300.98)){
+      text-shadow: 0 toRem(88) 0 $mainColor;
+    }
+    @media (max-width: em(1100.98)){
+      text-shadow: 0 toRem(80) 0 $mainColor;
+    }
+    @media (max-width:$mobile){
+      text-shadow: 0 toRem(68) 0 $mainColor;
+    }
+  }
+  // .link-get__letter
+  &__letter {
+    display: inline-block;
+    @include adaptiveValue("font-size", 105, 78,0,1920,1440);
+    @include adaptiveValue("font-size", 78, 42,3,1440,375);
+    font-weight: 500;
+    line-height: normal;
+    @include adaptiveValue("letter-spacing", -4.2, -1.68);
+    transition: transform .6s ease;
+    &:nth-child(10) {
+      transition-delay: .01s;
+    }
+    &:nth-child(9) {
+      transition-delay: .02s;
+    }
+    &:nth-child(8) {
+      transition-delay: .03s;
+    }
+    &:nth-child(7) {
+      transition-delay: .04s;
+    }
+    &:nth-child(6) {
+      transition-delay: .05s;
+    }
+    &:nth-child(5) {
+      transition-delay: .06s;
+    }
+    &:nth-child(4) {
+      transition-delay: .07s;
+    }
+    &:nth-child(3) {
+      transition-delay: .08s;
+    }
+    &:nth-child(2) {
+      transition-delay: .09s;
+    }
+    &:nth-child(1) {
+      transition-delay: .1s;
+    }
+  }
+}
+// =========================================================================
