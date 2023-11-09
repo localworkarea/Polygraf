@@ -222,6 +222,23 @@ export function formSubmit() {
 		}, 0);
 		// Очищуємо форму
 		formValidate.formClean(form);
+
+		// для формы form-job (careers page, popup) -------------------------
+		// Убираем класс _upload
+		const fileTextElement = form.querySelector(".form__file-txt");
+		const fileInsertElement = document.querySelector(".form__file-insert");
+		if (fileTextElement) {
+				fileTextElement.classList.remove("_upload");
+		}
+		// Очищаем элемент fileInsertElement.textContent
+		if (fileInsertElement) {
+				fileInsertElement.textContent = "";
+		}
+		const fileInputCV = form.querySelector("#formContactCV");
+    if (fileInputCV) {
+        fileInputCV.value = "";
+    }
+		// -------------------------------------------------------------------
 		// Повідомляємо до консолі
 		formLogging(`Форму відправлено!`);
 	}

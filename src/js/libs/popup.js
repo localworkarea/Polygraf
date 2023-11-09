@@ -32,7 +32,7 @@ class Popup {
 			},
 			focusCatch: true, // Фокус усередині попапа зациклений
 			closeEsc: true, // Закриття ESC
-			bodyLock: true, // Блокування скролла
+			bodyLock: false, // Блокування скролла
 			hashSettings: {
 				location: true, // Хеш в адресному рядку
 				goHash: true, // Перехід по наявності в адресному рядку

@@ -110,9 +110,11 @@
   &__bottom {
     padding-top: toRem(20);
     display: grid;
-    grid-template-columns: auto 1fr auto;
     gap: toRem(40);
-    @media (max-width: em(900.98)){
+    @media (min-width:em(950.98)){
+      grid-template-columns: auto 1fr auto;
+    }
+    @media (max-width: em(950.98)){
         grid-template-columns: 1fr 1fr;
         row-gap: toRem(20);
     }
@@ -161,9 +163,11 @@
   // .social-footer__list
   &__list {
     display: flex;
-    flex-wrap: wrap;
-    column-gap: toRem(45);
     row-gap: toRem(5);
+    @media (min-width:em(600.98)){
+      flex-wrap: wrap;
+      column-gap: toRem(45);
+    }
     @media (max-width: em(600.98)){
         flex-direction: column;
     }

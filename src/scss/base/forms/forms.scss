@@ -1,20 +1,459 @@
-//<FORM>
-// Сніппет (HTML):
-.form {
-	&__row {
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+.input {
+	width: 100%;
+	display: block;
+	outline: none;
+	color: $white;
+	background-color: transparent;
+
+	@include adaptiveValue("font-size", 16, 14);
+	line-height: 1.2;
+	cursor: pointer;
+	
+
+	&._form-focus {
 	}
-	&__column {
+	&._form-error {
 	}
-	&__line {
+
+
+}
+.input[placeholder]:not([data-placeholder-nohiden]) {
+	&::placeholder {
+		transition: opacity 0.3s;
+		color: $mainGray;
 	}
-	&__input {
-	}
-	&__button {
-	}
-	&__error {
+	&:focus::placeholder {
+		opacity: 0;
 	}
 }
-//</FORM>
+
+textarea.input {
+	resize: none;
+	padding: 0px 0px;
+	
+	background-color: transparent;
+	&::-webkit-scrollbar {
+	    width: 3px;
+	}
+	&::-webkit-scrollbar-thumb {
+	    background-color: #ccc;
+	    border-radius: 6px;
+	}
+	&::-webkit-scrollbar-track {
+	    background: transparent;
+	}
+	&::-webkit-scrollbar-thumb:hover {
+	    background-color: #999;
+	}
+}
+
+.form__error {
+	color: $pink;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.form {
+  // .form__body
+  &__body {
+		@include adaptiveValue("margin-bottom", 40, 20);
+		display: grid;
+		@media (min-width:em(1200.98)){
+			grid-template-columns: repeat(2, 1fr);
+			column-gap: toRem(10);
+		}
+		@media (max-width: em(1200.98)){
+			  grid-template-columns: 1fr;
+		}
+  }
+  // .form__item
+  &__item {
+		display: flex;
+		column-gap: toRem(37);
+		@include adaptiveValue("padding-top", 25, 15);
+		@include adaptiveValue("padding-bottom", 25, 15);
+		border-bottom: toRem(1) solid #3B3B3B;
+		&:nth-child(1),
+		&:nth-child(2) {
+			border-top: toRem(1) solid #3B3B3B;
+		}
+  }
+  // .form__num
+  &__num {
+		color: #545454;
+		font-size: toRem(16);
+		line-height: 1.2;
+  }
+  // .form__inputs
+  &__inputs {
+		width: 100%;
+		position: relative;
+		&::before {
+			@media (min-width:$mobileSmall){
+				content:"";
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				height: 1px;
+				background-color: #fff;
+				width: 0%;
+				transition: all .3s ease;
+			}
+			@media (max-width:$mobileSmall){
+				 display: none; 
+			}
+		}
+		@media (any-hover: hover){
+			&:hover{
+				&::before {
+					width: 100%;
+				}
+			}
+		}
+  }
+  // .form__label
+  &__label {
+		display: block;
+		color: $white;
+		line-height: 1.2 !important;
+		@include adaptiveValue("margin-bottom", 20, 10);
+  }
+	// .form__input
+  &__input {
+		width: 100%;
+		position: relative;
+	}
+  // .form__submit
+  &__submit {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		border: toRem(1) solid transparent;
+		font-size: toRem(18);
+		
+		overflow: hidden;
+		@include adaptiveValue("font-size", 24, 18);
+		font-weight: 500;
+	
+		transition: all .3s ease;
+		@include adaptiveValue("height", 80, 60);
+		&:not(:last-child) {
+			margin-bottom: toRem(15);
+		}
+  }
+  // .form__policy
+  &__policy {
+		color: $mainGray;
+		@include adaptiveValue("font-size", 16, 14);
+		line-height: 1.2;
+		a {
+			transition: all .3s;
+			color: $white;
+			@media (any-hover: hover){
+				&:hover{
+					opacity: .8;
+				}
+			}
+		}
+  }
+}
+
+// FORM-JOB (CAREERS PAGE POPUP) =======================
+.form-job {
+	.form {
+		// .form__body
+		&__body {
+			@media (min-width:em(700.98)){
+				grid-template-columns: repeat(2, 1fr) !important;
+				column-gap: toRem(55) !important;
+			}
+			@media (max-width: em(700.98)){
+				  grid-template-columns: 1fr;
+			}
+		}
+		// .form__item
+		&__item {
+			border-bottom: toRem(1) solid #CBCBCB;
+			&:nth-child(1),
+			&:nth-child(2) {
+				border-top: toRem(1) solid #CBCBCB;
+			}
+			&:nth-child(2) {
+				@media (max-width: em(700.98)){
+					  border-top: unset;
+				}
+			}
+		}
+		// .form__num
+		&__num {
+			color: #CBCBCB !important;
+		}
+		// .form__inputs
+		&__inputs {
+			&::before {
+				display: none !important;
+			}
+		}
+		// .form__label
+		&__label {
+			color: $mainColor !important;
+		}
+		// .form__input
+		&__input {
+			color: $mainColor !important;
+		}
+		// .form__file-inp
+		&__file-inp {
+			position: relative;
+			display: grid;
+			grid-template-columns: 1fr auto;
+			gap: toRem(10);
+		}
+		// .form__file-txt
+		&__file-txt {
+			text-wrap: nowrap;
+			overflow: hidden;
+			@include adaptiveValue("font-size", 16, 14);
+			line-height: 1.2;
+			font-weight: 400;
+			&._upload  {
+				span {
+					display: none;
+				}
+			}
+			p {
+
+			}
+			span {
+				color: $mainGray;
+			}
+		}
+		// .form__file-insert
+		&__file-insert {
+		}
+		// .form__input-file
+		&__input-file {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			font-size: 0;
+			cursor: pointer;
+		}
+		// .form__submit
+		&__submit {
+		}
+		// .form__policy
+		&__policy {
+			a {
+				color: $mainColor !important;
+			}
+		}
+	}
+}
+// =====================================================
+
+// button[data-value="Choose an option"] {
+//   color: red !important;
+// 	}
+// <SELECT>
+// Сніппет (HTML): sel
+.select {
+	min-width: 0;
+	position: relative;
+	// .select__body
+	&__body {
+		position: relative;
+	}
+	// .select__title
+	&__title {
+		overflow: hidden;
+		text-align: left;
+		cursor: pointer;
+		width: 100%;
+		// @include adaptiveValue("max-width", 338, 245,0,1920,1440);
+		// @include adaptiveValue("max-width", 245, 190,3,1440,1200);
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+	}
+	// .select__icon-arr 
+	&__icon-arr {
+	}
+	// .select__value
+	&__value {
+		// width: 100%;
+		// display: flex;
+		// min-width: 0;
+		// align-items: center;
+		// height: toRem(30);
+		padding: 0 toRem(10) 0 0;
+		overflow: hidden;
+		// gap: toRem(10);
+		// > * {
+		// 	flex: 1 1 auto;
+		// }
+		// &:after {
+		// 	content: "";
+		// 	align-self: stretch;
+		// 	flex: 0 0 10px;
+		// 	transition: all 0.3s ease 0s;
+		// 	display: flex;
+		// 	justify-content: center;
+		// 	align-items: center;
+		// 	._select-open & {
+		// 		transform: rotate(-180deg);
+		// 	}
+		// }
+		&._select-pseudo-label {
+			&::before {
+				content: attr(data-pseudo-label);
+				opacity: 0.5;
+			}
+		}
+	}
+	// .select__content
+	&__content {
+		// flex: 1 1 auto;
+		// overflow: hidden;
+		// text-overflow: ellipsis;
+		// white-space: nowrap;
+		@include adaptiveValue("font-size", 16, 14);
+		line-height: 1.2;
+		color: $mainGray;
+		._select-active & {
+			color: $white !important;	
+			.form-job & {
+				color: $mainColor !important;
+			}
+		}
+	}
+	// .select__text
+	&__text {
+		flex: 1 1 auto;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	&__input {
+		width: 100%;
+		background-color: transparent;
+		height: 100%;
+	}
+	// .select__options
+	&__options {
+		background-color: $mainColor;
+		position: absolute;
+		top: calc(100% - toRem(1));
+		min-width: 100%;
+		left: 0;
+		padding: 10px 0px 5px 0px;
+		.form-job & {
+			background-color: white !important;
+			border: toRem(1) solid $grayD4;
+		}
+	}
+	// .select__scroll
+	&__scroll {
+		overflow-y: auto;
+		overflow-x: hidden;
+		// Максимальна висота
+		max-height: toRem(250);
+		&::-webkit-scrollbar {
+		    width: 3px;
+		}
+		&::-webkit-scrollbar-thumb {
+		    background-color: #ccc;
+		    border-radius: 6px;
+				cursor: pointer;
+		}
+		&::-webkit-scrollbar-track {
+		    background: transparent;
+		}
+		&::-webkit-scrollbar-thumb:hover {
+		    background-color: #999;
+		}
+		// Стилі скроллбару
+		.simplebar-scrollbar {
+			&::before {
+				//opacity: 1;
+			}
+		}
+	}
+	// .select__option
+	&__option {
+		color: $mainGray;
+		width: 100%;
+		text-align: left;
+		cursor: pointer;
+		padding: 7.5px 15px;
+		&._select-selected {
+			background-color: #fff;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				color: #fff;
+				.form-job & {
+					background-color: $mainColor;
+				}
+			}
+		}
+	}
+
+	// Конструкція додаткових даних
+	&__row {
+		display: inline-flex;
+		align-items: center;
+	}
+	&__asset {
+	}
+	&__text {
+	}
+
+	&--show-top {
+		.select__options {
+			top: auto;
+			bottom: calc(100% - toRem(1));
+			border: 1px solid #d9d9d9;
+			border-bottom: 0;
+			border-radius: 4px 4px 0 0;
+			padding: 5px 0px 10px 0px;
+		}
+	}
+
+	// Стан селекту
+	&._select-open {
+	}
+	&._select-disabled {
+	}
+	&._select-active {
+	}
+	&._select-focus {
+	}
+	&._select-multiple {
+	}
+	&._select-checkbox {
+	}
+}
+
+// Тег
+._select-tag {
+	cursor: pointer;
+}
+
 
 // <BUTTONS>
 // Сніппет (HTML): btn

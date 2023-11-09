@@ -4,79 +4,56 @@ import { isMobile } from "./functions.js";
 import { flsModules } from "./modules.js";
 
 
-const header = document.querySelector('.header');
 const menuSubMenuItem = document.querySelector('.menu__item-sub-menu');
-const menuItems = document.querySelectorAll('.menu__item');
-const menuSubMenu = document.querySelector('.menu__sub-menu');
 
 if (menuSubMenuItem) {
+  const header = document.querySelector('.header');
+  const menuSubMenu = document.querySelector('.menu__sub-menu');
+
+  let isPopupOpen = false; // Флаг, отслеживающий состояние окна
+
   function handleSubMenuHover() {
     if (window.matchMedia('(min-width: 769px)').matches) {
       header.classList.add('_hover-sub-menu');
-      document.documentElement.classList.add("lock");
+      if (isPopupOpen) {
+        document.documentElement.classList.add("lock");
+      }
     }
   }
-
-  // function handleOtherMenuItemsHover(event) {
-  //   if (window.matchMedia('(min-width: 769px)').matches && event.target !== menuSubMenuItem) {
-  //     header.classList.remove('_hover-sub-menu');
-  //     document.documentElement.classList.remove("lock");
-  //   }
-  // }
 
   function handleOutsideClick(event) {
-    if (window.matchMedia('(min-width: 769px)').matches && !menuSubMenu.contains(event.target)) {
+    if (isPopupOpen && window.matchMedia('(min-width: 769px)').matches && !menuSubMenu.contains(event.target)) {
       header.classList.remove('_hover-sub-menu');
       document.documentElement.classList.remove("lock");
+      isPopupOpen = false; // Установка флага в false при клике за пределами попапа
+      document.removeEventListener('click', handleOutsideClick);
     }
   }
-
-  function handleResize() {
-    if (window.matchMedia('(min-width: 769px)').matches) {
-      header.classList.remove('_hover-sub-menu'); // Убираем класс при изменении размера окна
-      document.documentElement.classList.remove("lock");
-    }
-  }
-
-  // Добавляем обработчик события для `mouseenter` на `.menu__item-sub-menu`
-  menuSubMenuItem.addEventListener('mouseenter', handleSubMenuHover);
-
-  // // Добавляем обработчик события `mouseenter` для других `.menu__item`
-  // menuItems.forEach((menuItem) => {
-  //   menuItem.addEventListener('mouseenter', handleOtherMenuItemsHover);
-  // });
-
-  // Добавляем обработчик события `click` для клика вне `.menu__sub-menu`
-  document.addEventListener('click', handleOutsideClick);
-
-  // Обработчик события `resize` для учета изменения размера окна
-  window.addEventListener('resize', handleResize);
-
-  document.addEventListener('DOMContentLoaded', function() {
-    setTimeout(function() {
-      if (document.documentElement.classList.contains('touch')) {
-        // Удаляем все обработчики событий, если класс .touch присутствует
-        menuSubMenuItem.removeEventListener('mouseenter', handleSubMenuHover);
-        // menuItems.forEach((menuItem) => {
-        //   menuItem.removeEventListener('mouseenter', handleOtherMenuItemsHover);
-        // });
-        document.removeEventListener('click', handleOutsideClick);
-        window.removeEventListener('resize', handleResize);
-      }
-    }, 2000); // 2 секунды задержки
-  });
 
   function handleEscKey(event) {
-    if (event.key === 'Escape') { // Проверяем, что нажата клавиша "Esc"
+    if (event.key === 'Escape') {
       header.classList.remove('_hover-sub-menu');
-      document.documentElement.classList.remove("lock");
+      if (isPopupOpen) {
+        document.documentElement.classList.remove("lock");
+        isPopupOpen = false; // Установка флага в false при нажатии клавиши Escape
+        document.removeEventListener('keydown', handleEscKey);
+      }
     }
   }
 
-  // Добавляем обработчик события `keydown` для нажатия клавиши "Esc"
-  document.addEventListener('keydown', handleEscKey);
-}
+  function openPopup() {
+    // Функция, которая открывает попап
+    isPopupOpen = true; // Установка флага, что окно открыто
+    document.addEventListener('click', handleOutsideClick);
+    document.addEventListener('keydown', handleEscKey);
+    // Дополнительный код для открытия попапа
+  }
 
+  menuSubMenuItem.addEventListener('mouseenter', () => {
+    openPopup();
+    handleSubMenuHover();
+  });
+}
 
 const heroVideo = document.getElementById("heroVideo");
 const playPauseButton = document.getElementById("playPauseButton");
@@ -93,3 +70,127 @@ if (heroVideo) {
   });
 }
 
+
+
+
+// SHARE REFER (eCommerce page) ============================================
+document.addEventListener("DOMContentLoaded", function() {
+  const referralLinkField = document.querySelector("#referralLink");
+  const copyButton = document.querySelector("#copyButton");
+  const copiedRefElement = document.querySelector(".copied-ref");
+
+  if (referralLinkField) {
+    // Задаем значение поля с реферральной ссылкой
+    const yourReferralLink = "www.polygraf.ai/referrallinksetup";
+    referralLinkField.value = yourReferralLink;
+
+    function copyReferralLink() {
+      try {
+        if (navigator.share) {
+          // Если поддерживается navigator.share, используем его для поделиться ссылкой
+          navigator.share({
+            title: 'Share Referral Link',
+            text: yourReferralLink,
+          })
+            .catch(err => {
+              console.error('Failed to share link: ', err);
+            });
+        } else if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(referralLinkField.value)
+            .then(() => {
+              copiedRefElement.classList.add("_active");
+              setTimeout(() => {
+                copiedRefElement.classList.remove("_active");
+              }, 1500);
+            })
+            .catch(err => {
+              console.error('Failed to copy text: ', err);
+            });
+        } else {
+          referralLinkField.select();
+          document.execCommand("copy");
+          copiedRefElement.classList.add("_active");
+          setTimeout(() => {
+            copiedRefElement.classList.remove("_active");
+          }, 1500);
+        }
+      } catch (err) {
+        console.error('Error sharing/copying text: ', err);
+      }
+    }
+
+    copyButton.addEventListener("click", copyReferralLink);
+  }
+});
+
+
+//  "detect-source__item" input in textarea ========================
+const detectTextarea = document.querySelector('.detect-source__input');
+const detectItem = document.querySelector('.detect-source__item');
+
+if (detectTextarea) {
+  function handleTextareaInput() {
+    if (detectTextarea.value.trim() !== '') {
+      detectItem.classList.add('_typed');
+    } else {
+      detectItem.classList.remove('_typed');
+    }
+  }
+  detectTextarea.addEventListener('input', handleTextareaInput);
+}
+
+
+// Name of upload file to input (Careers page, popup) ========================
+const fileInputCV = document.getElementById("formContactCV");
+const fileTextElement = document.querySelector(".form__file-txt");
+const fileInsertElement = document.querySelector(".form__file-insert");
+
+if (fileInputCV) {
+    fileInputCV.addEventListener("change", function () {
+        if (fileInputCV.files[0]) {
+            fileInsertElement.textContent = fileInputCV.files[0].name;
+            fileTextElement.classList.add("_upload");
+        } else {
+            fileInsertElement.textContent = "";
+            fileTextElement.classList.remove("_upload");
+        }
+    });
+}
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Получите все элементы .item-jobs__btn
+  const jobButtons = document.querySelectorAll(".item-jobs__btn");
+  
+  // Получите соответствующий попап
+  const popupJobForm = document.getElementById("popupJobForm");
+  
+  if (popupJobForm) {
+    // Функция для копирования информации из item-jobs в попап
+    function copyJobInfo(event) {
+      
+      // Найдите ближайший родительский элемент .item-jobs
+      const itemJobs = event.currentTarget.closest(".item-jobs");
+      
+      // Получите информацию, которую нужно скопировать, из .item-jobs
+      const jobPosition = itemJobs.querySelector(".item-jobs__position h3").textContent;
+      const jobLocation = itemJobs.querySelector(".head-job__txt-b.job-location p").textContent;
+      const jobType = itemJobs.querySelector(".head-job__txt-b.job-type p").textContent;
+  
+      // Найдите соответствующие элементы в попапе
+      const popupJobPosition = popupJobForm.querySelector(".popup-form-position");
+      const popupJobLocation = popupJobForm.querySelector(".popup-form-location");
+      const popupJobType = popupJobForm.querySelector(".popup-form-job");
+  
+      // Скопируйте информацию в попап
+      popupJobPosition.textContent = jobPosition;
+      popupJobLocation.textContent = jobLocation;
+      popupJobType.textContent = jobType;
+    }
+  
+    // Добавьте обработчик события для каждой кнопки
+    jobButtons.forEach(function(button) {
+      button.addEventListener("click", copyJobInfo);
+    });
+  }
+});

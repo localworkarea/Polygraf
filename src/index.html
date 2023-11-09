@@ -36,7 +36,7 @@
 						</h1>
 					</div>
 				</section>
-				<section class="home-product product bg-prod-green">
+				<section class="home-product product bg-prod-green pdd-tp">
 					<div class="product__container">
 						<div class="product__head">
 							<h2 class="product__title title-main">
@@ -59,14 +59,14 @@
 									</h3>
 								</div>
 								<div data-spollers  data-one-spoller data-spollers-speed="500" class="spollers-prod__body">
-									<details class="spollers-prod__details">
+									<details data-open class="spollers-prod__details">
 										<summary class="spollers-prod__summary">
 											<h4>
 												Proprietary AI & Data Governance Solution
 											</h4>
-											<div class="spollers-prod__icon">
+											<span class="spollers-prod__icon">
 												<img src="@img/icons/arr-up-spoller.svg" alt="arrow">
-											</div>
+											</span>
 										</summary>
 										<div class="spollers-prod__content">
 											<div class="spollers-prod__info">
@@ -81,9 +81,9 @@
 											<h4>
 												Zero Trust Architecture
 											</h4>
-											<div class="spollers-prod__icon">
+											<span class="spollers-prod__icon">
 												<img src="@img/icons/arr-up-spoller.svg" alt="arrow">
-											</div>
+											</span>
 										</summary>
 										<div class="spollers-prod__content">
 											<div class="spollers-prod__info">
@@ -98,9 +98,9 @@
 											<h4>
 												Seamless Integration
 											</h4>
-											<div class="spollers-prod__icon">
+											<span class="spollers-prod__icon">
 												<img src="@img/icons/arr-up-spoller.svg" alt="arrow">
-											</div>
+											</span>
 										</summary>
 										<div class="spollers-prod__content">
 											<div class="spollers-prod__info">
@@ -115,9 +115,9 @@
 											<h4>
 												Real-time Data Privacy & Confidentiality Protection
 											</h4>
-											<div class="spollers-prod__icon">
+											<span class="spollers-prod__icon">
 												<img src="@img/icons/arr-up-spoller.svg" alt="arrow">
-											</div>
+											</span>
 										</summary>
 										<div class="spollers-prod__content">
 											<div class="spollers-prod__info">
@@ -132,9 +132,9 @@
 											<h4>
 												Secure Data & Encryption 
 											</h4>
-											<div class="spollers-prod__icon">
+											<span class="spollers-prod__icon">
 												<img src="@img/icons/arr-up-spoller.svg" alt="arrow">
-											</div>
+											</span>
 										</summary>
 										<div class="spollers-prod__content">
 											<div class="spollers-prod__info">
@@ -149,9 +149,9 @@
 											<h4>
 												Integration with Large Language Models 
 											</h4>
-											<div class="spollers-prod__icon">
+											<span class="spollers-prod__icon">
 												<img src="@img/icons/arr-up-spoller.svg" alt="arrow">
-											</div>
+											</span>
 										</summary>
 										<div class="spollers-prod__content">
 											<div class="spollers-prod__info">
@@ -166,9 +166,9 @@
 											<h4>
 												Multi-Format Input Compatibility
 											</h4>
-											<div class="spollers-prod__icon">
+											<span class="spollers-prod__icon">
 												<img src="@img/icons/arr-up-spoller.svg" alt="arrow">
-											</div>
+											</span>
 										</summary>
 										<div class="spollers-prod__content">
 											<div class="spollers-prod__info">
@@ -183,9 +183,9 @@
 											<h4>
 												Persistent Encoding and Decoding
 											</h4>
-											<div class="spollers-prod__icon">
+											<span class="spollers-prod__icon">
 												<img src="@img/icons/arr-up-spoller.svg" alt="arrow">
-											</div>
+											</span>
 										</summary>
 										<div class="spollers-prod__content">
 											<div class="spollers-prod__info">
@@ -201,7 +201,7 @@
 						<div class="product__btm">
 							<div class="product__button">
 								<a href="#" class="product__link _hover-el">
-									<span class="product__link-txt _hover">Product page</span>
+									<span class="product__link-txt _hover">Try it now</span>
 									<span class="product__link-ic">
 										<img src="@img/icons/arr-angle.svg" alt="arrow">
 									</span>
@@ -213,13 +213,13 @@
 						</div>
 					</div>
 				</section>
-				<section class="home-safety bg-main mrb-sect">
+				<section class="home-safety bg-main mrb-sect pdd-tp">
 					<div class="home-safety__container">
 						<div class="home-safety__head head-block head-block_dark">
 							<h2 class="head-block__title title-main">
 								<span>Safety</span>
 							</h2>
-							<a href="#" data-da=".home-safety__container,480,3" class="head-block__link link-dark _hover-el">
+							<a href="safety.html" data-da=".home-safety__container,480,3" class="head-block__link link-dark _hover-el">
 								<span class="head-block__link-txt _hover">More about safety</span>
 								<span class="head-block__link-ic">
 									<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
@@ -252,7 +252,7 @@
 							<h2 class="head-block__title title-main">
 								<span>What they’re saying</span>
 							</h2>
-							<a href="#" data-da=".home-testimonials__container,480,2" class="head-block__link link-light _hover-el">
+							<a href="about.html" data-da=".home-testimonials__container,480,2" class="head-block__link link-light _hover-el">
 								<span class="head-block__link-txt _hover">More about us</span>
 								<span class="head-block__link-ic">
 									<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
@@ -265,90 +265,88 @@
 							@@include('html/_testimonials.htm',{})
 					</div>
 				</section>
-				<section class="home-started bg-main mrb-sect">
-					<div class="home-started__container">
-						<div class="get-started">
-							<div class="get-started__head head-block head-block_dark">
-								<h2 class="head-block__title title-main">
-									<span>Get started</span>
-								</h2>
-								<a href="#" class="head-block__link link-dark _hover-el">
-									<span class="head-block__link-txt _hover">All products</span>
-									<span class="head-block__link-ic">
-										<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-											<path d="M20.9891 10.2584L9.32203 21.9255" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-											<path d="M11.5979 10.2784L20.9892 10.2581L20.9697 19.6501" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-										</svg>
-									</span>
-								</a>
+				<section class="home-started get-started bg-main mrb-sect pdd-tp">
+					<div class="get-started__container">
+						<div class="get-started__head head-block head-block_dark">
+							<h2 class="head-block__title title-main">
+								<span>Get started</span>
+							</h2>
+							<a href="products.html" class="head-block__link link-dark _hover-el">
+								<span class="head-block__link-txt _hover">All products</span>
+								<span class="head-block__link-ic">
+									<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+										<path d="M20.9891 10.2584L9.32203 21.9255" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M11.5979 10.2784L20.9892 10.2581L20.9697 19.6501" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</span>
+							</a>
+						</div>
+						<div class="get-started__body">
+							<div class="get-started__info">
+								<div class="get-started__block">
+									<p class="get-started__txt-big txt-big">
+										Browse our products.
+									</p>
+									<p class="get-started__txt-sm txt-sm">
+										Polygraf’s AI Governance & Data Integrity Suite is dedicated to creating a reliable and authentic digital ecosystem where humans and machines coexist.
+									</p>
+									<a href="contact.html" class="get-started__btn btn btn_01">Get in touch</a>
+								</div>
 							</div>
-							<div class="get-started__body">
-								<div class="get-started__info">
-									<div class="get-started__block">
-										<p class="get-started__txt-big txt-big">
-											Browse our products.
-										</p>
-										<p class="get-started__txt-sm txt-sm">
-											Polygraf’s AI Governance & Data Integrity Suite is dedicated to creating a reliable and authentic digital ecosystem where humans and machines coexist.
-										</p>
-										<a href="#" class="get-started__btn btn btn_01">Get in touch</a>
-									</div>
-								</div>
-								<div class="get-started__products">
-									<h3 class="get-started__title">
-										Discover all our products:
-									</h3>
-									<ul class="get-started__list list-started">
-										<li class="list-started__item">
-											<a href="#" class="list-started__link">
-												<span class="list-started__img-ic">
-													<img src="@img/icons/governance.svg" alt="icon governance">
-												</span>
-												<span class="list-started__txt">AI Governance</span>
-												<svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36" fill="none">
-													<path d="M24.488 12.4683L10.8764 26.08" stroke="#45F9E3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-													<path d="M13.5311 12.4915L24.4875 12.4679L24.4648 23.4253" stroke="#45F9E3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-												</svg>
-											</a>
-										</li>
-										<li class="list-started__item">
-											<a href="#" class="list-started__link">
-												<span class="list-started__img-ic">
-													<img src="@img/icons/plagiarism.svg" alt="icon plagiarism">
-												</span>
-												<span class="list-started__txt">AI Source Detection</span>
-												<svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36" fill="none">
-													<path d="M24.488 12.4683L10.8764 26.08" stroke="#F747A1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-													<path d="M13.5311 12.4915L24.4875 12.4679L24.4648 23.4253" stroke="#F747A1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-												</svg>
-											</a>
-										</li>
-										<li class="list-started__item">
-											<a href="#" class="list-started__link">
-												<span class="list-started__img-ic">
-													<img src="@img/icons/detection.svg" alt="icon detection">
-												</span>
-												<span class="list-started__txt">AI Identification</span>
-												<svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36" fill="none">
-													<path d="M24.488 12.4683L10.8764 26.08" stroke="#FBBF5B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-													<path d="M13.5311 12.4915L24.4875 12.4679L24.4648 23.4253" stroke="#FBBF5B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-												</svg>
-											</a>
-										</li>
-										<li class="list-started__item">
-											<a href="#" class="list-started__link">
-												<span class="list-started__img-ic">
-													<img src="@img/icons/extension.svg" alt="icon extension">
-												</span>
-												<span class="list-started__txt">ECommerce Trust Engine</span>
-												<svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36" fill="none">
-													<path d="M24.488 12.4683L10.8764 26.08" stroke="#4E79B9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-													<path d="M13.5311 12.4915L24.4875 12.4679L24.4648 23.4253" stroke="#4E79B9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-												</svg>
-											</a>
-										</li>
-									</ul>
-								</div>
+							<div class="get-started__products">
+								<h3 class="get-started__title">
+									Discover all our products:
+								</h3>
+								<ul class="get-started__list list-started">
+									<li class="list-started__item">
+										<a href="ai-governance.html" class="list-started__link">
+											<span class="list-started__img-ic">
+												<img src="@img/icons/governance.svg" alt="icon">
+											</span>
+											<span class="list-started__txt">AI Governance</span>
+											<svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36" fill="none">
+												<path d="M24.488 12.4683L10.8764 26.08" stroke="#45F9E3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+												<path d="M13.5311 12.4915L24.4875 12.4679L24.4648 23.4253" stroke="#45F9E3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+										</a>
+									</li>
+									<li class="list-started__item">
+										<a href="ai-detection.html" class="list-started__link">
+											<span class="list-started__img-ic">
+												<img src="@img/icons/plagiarism.svg" alt="icon">
+											</span>
+											<span class="list-started__txt">AI Source Detection</span>
+											<svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36" fill="none">
+												<path d="M24.488 12.4683L10.8764 26.08" stroke="#F747A1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+												<path d="M13.5311 12.4915L24.4875 12.4679L24.4648 23.4253" stroke="#F747A1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+										</a>
+									</li>
+									<li class="list-started__item">
+										<a href="ai-identification.html" class="list-started__link">
+											<span class="list-started__img-ic">
+												<img src="@img/icons/detection.svg" alt="icon">
+											</span>
+											<span class="list-started__txt">AI Identification</span>
+											<svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36" fill="none">
+												<path d="M24.488 12.4683L10.8764 26.08" stroke="#FBBF5B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+												<path d="M13.5311 12.4915L24.4875 12.4679L24.4648 23.4253" stroke="#FBBF5B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+										</a>
+									</li>
+									<li class="list-started__item">
+										<a href="ecommerce.html" class="list-started__link">
+											<span class="list-started__img-ic">
+												<img src="@img/icons/extension.svg" alt="icon">
+											</span>
+											<span class="list-started__txt">ECommerce Trust Engine</span>
+											<svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36" fill="none">
+												<path d="M24.488 12.4683L10.8764 26.08" stroke="#4E79B9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+												<path d="M13.5311 12.4915L24.4875 12.4679L24.4648 23.4253" stroke="#4E79B9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+										</a>
+									</li>
+								</ul>
 							</div>
 						</div>
 					</div>
@@ -359,7 +357,7 @@
 							<h2 class="head-block__title title-main">
 								<span>News & Updates</span>
 							</h2>
-							<a href="#" class="head-block__link link-light _hover-el">
+							<a href="news.html" class="head-block__link link-light _hover-el">
 								<span class="head-block__link-txt _hover">All</span>
 								<span class="head-block__link-ic">
 									<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
@@ -370,7 +368,6 @@
 							</a>
 						</div>
 						<div class="home-news__news-upd news-upd">
-
 							<article class="news-upd__item">
 								<div class="news-upd__data">
 									<div class="news-upd__data-wrap border-btm">
@@ -411,7 +408,6 @@
 									</div>
 								</div>
 							</article>
-							
 							<article class="news-upd__item">
 								<div class="news-upd__data">
 									<div class="news-upd__data-wrap border-btm">
@@ -452,8 +448,6 @@
 									</div>
 								</div>
 							</article>
-
-							
 						</div>
 					</div>
 				</section>

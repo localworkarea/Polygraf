@@ -315,7 +315,11 @@ class SelectConstructor {
 			// Якщо вибрано елемент зі своїм класом
 			const customClass = this.getSelectedOptionsData(originalSelect).elements.length && this.getSelectedOptionsData(originalSelect).elements[0].dataset.class ? ` ${this.getSelectedOptionsData(originalSelect).elements[0].dataset.class}` : '';
 			// Виводимо текстове значення
-			return `<button type="button" class="${this.selectClasses.classSelectTitle}"><span${pseudoAttribute} class="${this.selectClasses.classSelectValue}${pseudoAttributeClass}"><span class="${this.selectClasses.classSelectContent}${customClass}">${selectTitleValue}</span></span></button>`;
+			return `
+			<button type="button" class="${this.selectClasses.classSelectTitle}">
+			<span${pseudoAttribute} class="${this.selectClasses.classSelectValue}${pseudoAttributeClass}"><span class="${this.selectClasses.classSelectContent}${customClass}">${selectTitleValue}</span></span>
+			<img class="select__icon-arr" src="img/icons/arr-dwn.svg" alt="arrow"></button>
+			`;
 		}
 	}
 	// Конструктор даних для значення заголовка

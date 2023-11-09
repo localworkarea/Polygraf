@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/_head.htm',{
+	"title":"Analyze a Product URL | Polygraf"
+	})
+	<body>
+		<div class="wrapper page-analyze">
+			@@include('html/_header.htm',{
+				"class":"header-dark"
+			})
+			<main class="page">
+				<section class="analyze-hero bg-main mrt-hero pdd-tp">
+					<div class="analyze-hero__image">
+						<img src="@img/el/analyze.svg" alt="decor">
+					</div>
+					<div class="analyze-hero__container">
+						<div class="analyze-hero__head head-block head-block_dark">
+							<h2 class="head-block__title title-main">
+								<span>Analyze a Product URL</span>
+							</h2>
+						</div>
+						<div class="analyze-hero__title pdd-btm">
+							<p class="analyze-hero__txt-main title-avr">
+								Find out which review or product you can trust. Insert or paste a product URL from one of our supported platforms and our AI will do the rest.
+							</p>
+						</div>
+						<div class="analyze-hero__form">
+							<form class="form-analyze" action="">
+								<div class="form-analyze__item">
+									<label for="analyzeSelect" class="form-analyze__label txt-smx">Select a store</label>
+									<select id="analyzeSelect" name="selectContact" data-class-modif="select-form" >
+										<option value="" >Select</option>
+										<option value="2">Amazon</option>
+										<option value="3">Walmart</option>
+										<option value="4">Bestbuy</option>
+									</select>
+								</div>
+								<div class="form-analyze__item">
+									<label for="analyzeURL" class="form-analyze__label txt-smx">Paste your URL</label>
+									<input id="analyzeURL" placeholder="Paste URL" type="url" name="url" class="form-analyze__input">
+								</div>
+								<button type="submit" class="form-analyze__btn txt-22">Analyze</button>
+							</form>
+						</div>
+					</div>
+				</section>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>

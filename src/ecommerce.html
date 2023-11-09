@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/_head.htm',{
+	"title":"Products | Polygraf"
+	})
+	<body>
+		<div class="wrapper page-ecommerce">
+			@@include('html/_header.htm',{
+				"class":"header-dark"
+			})
+			<main class="page">
+				<section class="ecomr-hero mrb-sect mrt-hero">
+					<div class="ecomr-hero__container">
+						<div class="ecomr-hero__head head-block">
+							<h2 class="head-block__title title-main">
+								<span>eCommerce Trust Engine</span>
+							</h2>
+							<a href="#" data-da=".ecomr-hero__container,480,3" class="head-block__link link-light _hover-el">
+								<span class="head-block__link-txt _hover">More products</span>
+								<span class="head-block__link-ic">
+									<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+										<path d="M20.9891 10.2584L9.32203 21.9255" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M11.5979 10.2784L20.9892 10.2581L20.9697 19.6501" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</span>
+							</a>
+						</div>
+						<div class="ecomr-hero__sub-head sub-block">
+							<div class="sub-block__left">
+								<p class="sub-block__big txt-big">
+									AI-powered solutions that enable you to instantly trust what you read, hear and see.
+								</p>
+							</div>
+							<div class="sub-block__right">
+								<p class="sub-block__sm txt-sm">
+									We understand the growing challenges posed by human and AI-generated misinformation, and we are committed to addressing these issues head-on.
+								</p>
+							</div>
+						</div>
+						<div class="ecomr-hero__body">
+							<div class="ecomr-hero__video video-prodts">
+								<div class="video-prodts__video">
+									<video width="100%" height="100%" class="video-prodts__video-el" id="heroVideo" muted playsinline poster="@img/photos/hero.jpg" autoplay loop>
+										<source src="files/home_hero.mp4" type="video/mp4"/>
+									</video>
+								</div>
+								<div class="video-prodts__nav">
+									<div class="video-nav">
+										<button id="playPauseButton" class="video-nav__btn">
+											<span class="video-nav__pause">
+												<span>Pause video</span>
+												<img src="@img/icons/paused.svg" alt="paused">
+											</span>
+											<span class="video-nav__play">
+												<span>Play video</span>
+												<img src="@img/icons/play.svg" alt="play">
+											</span>
+										</button>
+										<a href="#" class="video-nav__link _hover-el">
+											<span class="video-nav__txt _hover">Try now</span>
+											<img  class="video-nav__ic color-white " src="@img/icons/arr-angle.svg" alt="arrow">
+										</a>
+									</div>
+									<h1 class="video-prodts__title title-avr">
+										Say goodbye to wasted time on inferior products & hello to a smarter AI-powered shopping experience.
+									</h1>
+								</div>
+								<div class="video-prodts__links links-prod">
+									<div class="links-prod__body links-prod__body_two">
+										<a href="#" class="links-prod__back">
+											<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+												<path d="M5.22866 9.89596L16.2285 9.89596" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+												<path d="M9.66602 14.3138L5.22941 9.8963L9.66602 5.47803" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+											<span>Back to products page</span>
+										</a>
+										<div class="links-prod__items bg-main">
+											<a href="#" class="links-prod__link link-01 _hover-el">
+												<span class="_hover">AI Governance</span>
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+													<path d="M16.1717 8.34696L7.18279 17.3359"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+													<path d="M8.93576 8.36228L16.1712 8.3467L16.1562 15.5828"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+												</svg>
+											</a>
+											<a href="#" class="links-prod__link link-02 _hover-el">
+												<span class="_hover">Plagiarism Checks</span>
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+													<path d="M16.1717 8.34696L7.18279 17.3359"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+													<path d="M8.93576 8.36228L16.1712 8.3467L16.1562 15.5828"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+												</svg>
+											</a>
+											<a href="#" class="links-prod__link link-03 _hover-el">
+												<span class="_hover">AI Detection</span>
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+													<path d="M16.1717 8.34696L7.18279 17.3359"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+													<path d="M8.93576 8.36228L16.1712 8.3467L16.1562 15.5828"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+												</svg>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="ecomr-how mrb-sect">
+					<div class="how-works">
+						<div class="how-works__container">
+							<div class="how-works__head head-block">
+								<h2 class="head-block__title title-main">
+									<span>How it Works</span>
+								</h2>
+								<a href="#" data-da=".how-works__container,480,2" class="head-block__link link-light _hover-el">
+									<span class="head-block__link-txt _hover">More products</span>
+									<span class="head-block__link-ic">
+										<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+											<path d="M20.9891 10.2584L9.32203 21.9255" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M11.5979 10.2784L20.9892 10.2581L20.9697 19.6501" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</span>
+								</a>
+							</div>
+							<div class="how-works__body">
+								<div class="how-works__info">
+									<h3 class="how-works__sub-title txt-big">
+										Say goodbye to wasted <br> time in just 3 easy steps.
+									</h3>
+									<ul class="how-works__list">
+										<li class="how-works__item border-btm">
+											<div class="how-works__num txt-num">01</div>
+											<div class="how-works__item-wr">
+												<p class="how-works__txt-b txt-sm">
+													Add to your browser in seconds
+												</p>
+												<p class="how-works__txt-s txt-smx">
+													Add Polygraf for free to Chrome or Microsoft Edge with a few clicks.
+												</p>
+											</div>
+										</li>
+										<li class="how-works__item border-btm">
+											<div class="how-works__num txt-num">02</div>
+											<div class="how-works__item-wr">
+												<p class="how-works__txt-b txt-sm">
+													Browse products and reviews<br> with ease
+												</p>
+												<p class="how-works__txt-s txt-smx">
+													Available on Amazon, Walmart & Best Buy, expanding to more online stores soon.
+												</p>
+											</div>
+										</li>
+										<li class="how-works__item border-btm">
+											<div class="how-works__num txt-num">03</div>
+											<div class="how-works__item-wr">
+												<p class="how-works__txt-b txt-sm">
+													Let our advanced AI do the<br> verification for you
+												</p>
+												<p class="how-works__txt-s txt-smx">
+													Our AI Engine identifies deceptive & untrustworthy reviews, so you can buy products you'll love.
+												</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="how-works__image-ibg">
+									<img src="img/photos/ecomr-how-it-works.jpg" alt="how it works">
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="ecomr-dev bg-main mrb-sect pdd-tp">
+					<div class="ecomr-dev__container">
+						<div class="ecomr-dev__head head-block head-block_dark">
+							<h2 class="head-block__title title-main">
+								<span>Developing safe & responsible AI</span>
+							</h2>
+							<a href="#" class="head-block__link link-dark _hover-el">
+								<span class="head-block__link-txt _hover">Contact us</span>
+								<span class="head-block__link-ic">
+									<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+										<path d="M20.9891 10.2584L9.32203 21.9255" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M11.5979 10.2784L20.9892 10.2581L20.9697 19.6501" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</span>
+							</a>
+						</div>
+						<div class="ecomr-dev__body">
+							<div class="ecomr-dev__image image-ecomr">
+								<h3 class="image-ecomr__title title-avr">
+									" Polygraf Trust Engine allows users to identify false & misleading consumer reviews, including those generated by AI, with a single click."
+								</h3>
+								<div class="image-ecomr__img-ibg">
+									<img src="@img/photos/ecomr-dev.jpg" alt="image">
+								</div>
+								<a href="#" class="image-ecomr__link">
+									<span>Add to Chrome</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="69" height="68" viewBox="0 0 69 68" fill="none">
+										<path d="M48.521 23.2526L22.0755 49.6981" stroke="url(#paint0_linear_64_6264)" stroke-width="3.88798" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M27.2358 23.2988L48.5226 23.2529L48.4785 44.5415" stroke="url(#paint1_linear_64_6264)" stroke-width="3.88798" stroke-linecap="round" stroke-linejoin="round"/>
+										<defs>
+											<linearGradient id="paint0_linear_64_6264" x1="23.1036" y1="49.4267" x2="20.338" y2="46.1754" gradientUnits="userSpaceOnUse">
+												<stop offset="0.0326" stop-color="#FF299E"/>
+												<stop offset="0.2705" stop-color="#FF9190"/>
+												<stop offset="0.3399" stop-color="#FFA378"/>
+												<stop offset="0.4488" stop-color="#FFBD55"/>
+												<stop offset="0.5096" stop-color="#F7C05D"/>
+												<stop offset="0.6043" stop-color="#E1C872"/>
+												<stop offset="0.7205" stop-color="#BDD495"/>
+												<stop offset="0.777" stop-color="#A9DBA9"/>
+												<stop offset="0.9212" stop-color="#57F3D8"/>
+												<stop offset="1" stop-color="#2FFFEF"/>
+											</linearGradient>
+											<linearGradient id="paint1_linear_64_6264" x1="42.6783" y1="38.2172" x2="50.2347" y2="19.952" gradientUnits="userSpaceOnUse">
+												<stop offset="0.0326" stop-color="#FF299E"/>
+												<stop offset="0.2705" stop-color="#FF9190"/>
+												<stop offset="0.3399" stop-color="#FFA378"/>
+												<stop offset="0.4488" stop-color="#FFBD55"/>
+												<stop offset="0.5096" stop-color="#F7C05D"/>
+												<stop offset="0.6043" stop-color="#E1C872"/>
+												<stop offset="0.7205" stop-color="#BDD495"/>
+												<stop offset="0.777" stop-color="#A9DBA9"/>
+												<stop offset="0.9212" stop-color="#57F3D8"/>
+												<stop offset="1" stop-color="#2FFFEF"/>
+											</linearGradient>
+										</defs>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="ecomr-featured featured mrb-sect">
+					<div class="featured__container">
+						<div class="featured__head head-block">
+							<h2 class="head-block__title title-main">
+								<span>Featured on</span>
+							</h2>
+							<a href="#" data-da=".featured__container,480,2" class="head-block__link link-light _hover-el">
+								<span class="head-block__link-txt _hover">Join us</span>
+								<span class="head-block__link-ic">
+									<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+										<path d="M20.9891 10.2584L9.32203 21.9255" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M11.5979 10.2784L20.9892 10.2581L20.9697 19.6501" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</span>
+							</a>
+						</div>
+						<div class="featured__body">
+							<div class="featured__slider swiper">
+								<div class="featured__wrapper swiper-wrapper">
+									<div class="featured__slide slide-featured swiper-slide">
+										<div class="slide-featured__body">
+											<p class="slide-featured__num">01</p>
+											<div class="slide-featured__circle">
+												<svg xmlns="http://www.w3.org/2000/svg" width="219" height="219" viewBox="0 0 219 219" fill="none">
+													<circle cx="109.375" cy="109.376" r="109.375" fill="#F9F9F9"/>
+												</svg>
+												<div class="slide-featured__img">
+													<img src="@img/featured/morningstar.svg" alt="morningstar">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="featured__slide slide-featured swiper-slide">
+										<div class="slide-featured__body">
+											<p class="slide-featured__num">02</p>
+											<div class="slide-featured__circle">
+												<svg xmlns="http://www.w3.org/2000/svg" width="219" height="219" viewBox="0 0 219 219" fill="none">
+													<circle cx="109.375" cy="109.376" r="109.375" fill="#F9F9F9"/>
+												</svg>
+												<div class="slide-featured__img">
+													<img src="@img/featured/dailyadbrief.svg" alt="dailyadbrief">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="featured__slide slide-featured swiper-slide">
+										<div class="slide-featured__body">
+											<p class="slide-featured__num">03</p>
+											<div class="slide-featured__circle">
+												<svg xmlns="http://www.w3.org/2000/svg" width="219" height="219" viewBox="0 0 219 219" fill="none">
+													<circle cx="109.375" cy="109.376" r="109.375" fill="#F9F9F9"/>
+												</svg>
+												<div class="slide-featured__img">
+													<img src="@img/featured/benzinga.svg" alt="benzinga">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="featured__slide slide-featured swiper-slide">
+										<div class="slide-featured__body">
+											<p class="slide-featured__num">04</p>
+											<div class="slide-featured__circle">
+												<svg xmlns="http://www.w3.org/2000/svg" width="219" height="219" viewBox="0 0 219 219" fill="none">
+													<circle cx="109.375" cy="109.376" r="109.375" fill="#F9F9F9"/>
+												</svg>
+												<div class="slide-featured__img">
+													<img src="@img/featured/newsnow.svg" alt=" news now">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="featured__slide slide-featured swiper-slide">
+										<div class="slide-featured__body">
+											<p class="slide-featured__num">05</p>
+											<div class="slide-featured__circle">
+												<svg xmlns="http://www.w3.org/2000/svg" width="219" height="219" viewBox="0 0 219 219" fill="none">
+													<circle cx="109.375" cy="109.376" r="109.375" fill="#F9F9F9"/>
+												</svg>
+												<div class="slide-featured__img">
+													<img src="@img/featured/martechseries.svg" alt="martechseries">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="featured__slide slide-featured swiper-slide">
+										<div class="slide-featured__body">
+											<p class="slide-featured__num">06</p>
+											<div class="slide-featured__circle">
+												<svg xmlns="http://www.w3.org/2000/svg" width="219" height="219" viewBox="0 0 219 219" fill="none">
+													<circle cx="109.375" cy="109.376" r="109.375" fill="#F9F9F9"/>
+												</svg>
+												<div class="slide-featured__img">
+													<img src="@img/featured/boston.svg" alt="boston herald">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="featured__slide slide-featured swiper-slide">
+										<div class="slide-featured__body">
+											<p class="slide-featured__num">07</p>
+											<div class="slide-featured__circle">
+												<svg xmlns="http://www.w3.org/2000/svg" width="219" height="219" viewBox="0 0 219 219" fill="none">
+													<circle cx="109.375" cy="109.376" r="109.375" fill="#F9F9F9"/>
+												</svg>
+												<div class="slide-featured__img">
+													<img src="@img/featured/kxan.svg" alt="kxan">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="featured__slide slide-featured swiper-slide">
+										<div class="slide-featured__body">
+											<p class="slide-featured__num">08</p>
+											<div class="slide-featured__circle">
+												<svg xmlns="http://www.w3.org/2000/svg" width="219" height="219" viewBox="0 0 219 219" fill="none">
+													<circle cx="109.375" cy="109.376" r="109.375" fill="#F9F9F9"/>
+												</svg>
+												<div class="slide-featured__img">
+													<img src="@img/featured/yahoo.svg" alt="yahoo finance">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="featured__buttons slider-btns">
+									<div class="slider-btns__wrap">
+										<button type="button" class="slider__btn swiper-button-prev">
+											<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+											<path d="M28.8022 16.7855H6.92725" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M19.9795 7.99983L28.8024 16.7848L19.9795 25.5713" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+										</button>
+										<button type="button" class="slider__btn swiper-button-next">
+											<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+											<path d="M28.8022 16.7855H6.92725" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M19.9795 7.99983L28.8024 16.7848L19.9795 25.5713" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="ecomr-ferify mrb-sect">
+					<div class="ecomr-ferify__container">
+						<div class="ecomr-ferify__head head-block">
+							<h2 class="head-block__title title-main">
+								<span>Verify Products & Reviews</span>
+							</h2>
+							<a href="#" class="head-block__link _hover-el">
+								<span class="head-block__link-txt _hover">Contact us</span>
+								<span class="head-block__link-ic">
+									<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+										<path d="M20.9891 10.2584L9.32203 21.9255" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M11.5979 10.2784L20.9892 10.2581L20.9697 19.6501" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</span>
+							</a>
+						</div>
+						<div class="ecomr-ferify__body">
+							<div class="ecomr-ferify__image image-ecomr">
+								<h3 class="image-ecomr__title title-avr">
+									Say goodbye to wasted time on inferior products and hello to a smarter AI-powered shopping experience.
+								</h3>
+								<div class="image-ecomr__img-ibg">
+									<img src="@img/photos/ecomr-dev.jpg" alt="image">
+								</div>
+								<a href="#" class="image-ecomr__link">
+									<span>Install now for free</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="69" height="68" viewBox="0 0 69 68" fill="none">
+										<path d="M48.521 23.2526L22.0755 49.6981" stroke="url(#paint0_linear_64_6264)" stroke-width="3.88798" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M27.2358 23.2988L48.5226 23.2529L48.4785 44.5415" stroke="url(#paint1_linear_64_6264)" stroke-width="3.88798" stroke-linecap="round" stroke-linejoin="round"/>
+										<defs>
+											<linearGradient id="paint0_linear_64_6264" x1="23.1036" y1="49.4267" x2="20.338" y2="46.1754" gradientUnits="userSpaceOnUse">
+												<stop offset="0.0326" stop-color="#FF299E"/>
+												<stop offset="0.2705" stop-color="#FF9190"/>
+												<stop offset="0.3399" stop-color="#FFA378"/>
+												<stop offset="0.4488" stop-color="#FFBD55"/>
+												<stop offset="0.5096" stop-color="#F7C05D"/>
+												<stop offset="0.6043" stop-color="#E1C872"/>
+												<stop offset="0.7205" stop-color="#BDD495"/>
+												<stop offset="0.777" stop-color="#A9DBA9"/>
+												<stop offset="0.9212" stop-color="#57F3D8"/>
+												<stop offset="1" stop-color="#2FFFEF"/>
+											</linearGradient>
+											<linearGradient id="paint1_linear_64_6264" x1="42.6783" y1="38.2172" x2="50.2347" y2="19.952" gradientUnits="userSpaceOnUse">
+												<stop offset="0.0326" stop-color="#FF299E"/>
+												<stop offset="0.2705" stop-color="#FF9190"/>
+												<stop offset="0.3399" stop-color="#FFA378"/>
+												<stop offset="0.4488" stop-color="#FFBD55"/>
+												<stop offset="0.5096" stop-color="#F7C05D"/>
+												<stop offset="0.6043" stop-color="#E1C872"/>
+												<stop offset="0.7205" stop-color="#BDD495"/>
+												<stop offset="0.777" stop-color="#A9DBA9"/>
+												<stop offset="0.9212" stop-color="#57F3D8"/>
+												<stop offset="1" stop-color="#2FFFEF"/>
+											</linearGradient>
+										</defs>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="ecomr-trust bg-main mrb-sect pdd-tp pdd-btm">
+					<div class="ecomr-trust__container">
+						<div class="ecomr-trust__head head-block head-block_dark">
+							<h2 class="head-block__title title-main">
+								<span>We are an AI-powered Trust Engine, 
+									born in Austin, TX, originally as a protest 
+									against fake online reviews.</span>
+							</h2>
+							<a href="#" data-da=".ecomr-trust__container,480,2" class="head-block__link link-dark _hover-el">
+								<span class="head-block__link-txt _hover">Our products</span>
+								<span class="head-block__link-ic">
+									<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+										<path d="M20.9891 10.2584L9.32203 21.9255" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M11.5979 10.2784L20.9892 10.2581L20.9697 19.6501" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</span>
+							</a>
+						</div>
+						<div class="ecomr-trust__body">
+							<ul class="list-prodts">
+								<li class="list-prodts__item border-btm border-btm_dark">
+									<div class="list-prodts__block">
+										<img class="list-prodts__ic" src="@img/icons/colored/clock.svg" alt="icon">
+										<div class="list-prodts__txt-b">
+											<p class="txt-l">
+												Real-time<br> Authentication
+											</p>
+										</div>
+									</div>
+									<div class="list-prodts__txt-s">
+										<p class="txt-sm-02">
+											Polygraf AI's real-time verification sifts through mountains of products and reviews, quickly flagging anything that’s less than genuine.
+										</p>
+									</div>
+								</li>
+								<li class="list-prodts__item border-btm border-btm_dark">
+									<div class="list-prodts__block">
+										<img class="list-prodts__ic" src="@img/icons/colored/check.svg" alt="icon">
+										<div class="list-prodts__txt-b">
+											<p class="txt-l">
+												Reliability<br>
+												Assessment
+											</p>
+										</div>
+									</div>
+									<div class="list-prodts__txt-s">
+										<p class="txt-sm-02">
+											Instantly identify whether the content you’re reading is human or AI-generated. With Polygraf AI, you get a clear understanding of the authenticity & reliability of any products and reviews you encounter online.
+										</p>
+									</div>
+								</li>
+								<li class="list-prodts__item border-btm border-btm_dark">
+									<div class="list-prodts__block">
+										<img class="list-prodts__ic" src="@img/icons/colored/score.svg" alt="icon">
+										<div class="list-prodts__txt-b">
+											<p class="txt-l">
+												Trust <br>
+												Scores
+											</p>
+										</div>
+									</div>
+									<div class="list-prodts__txt-s">
+										<p class="txt-sm-02">
+											Every product and review is assigned a Trust Score from 0-100%, coupled with bullet point product summaries. We want you to make informed online purchase decisions based on the reliability of the information you consume.
+										</p>
+									</div>
+								</li>
+								<li class="list-prodts__item border-btm border-btm_dark">
+									<div class="list-prodts__block">
+										<img class="list-prodts__ic" src="@img/icons/colored/accuracy.svg" alt="icon">
+										<div class="list-prodts__txt-b">
+											<p class="txt-l">
+												Unparalleled <br>
+												Accuracy
+											</p>
+										</div>
+									</div>
+									<div class="list-prodts__txt-s">
+										<p class="txt-sm-02">
+											Leveraging advanced AI protocols, Polygraf offers unrivaled precision in exposing the fake & empowering the genuine. We strive beyond “I think it could be real”, and use data-driven metrics to get you to “I know it’s real”.
+										</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>				
+				<section class="ecomr-testimonials mrb-sect">
+					<div class="ecomr-testimonials__container">
+						<div class="ecomr-testimonials__head head-block">
+							<h2 class="head-block__title title-main">
+								<span>What they’re saying</span>
+							</h2>
+							<a href="#" data-da=".ecomr-testimonials__container,480,2" class="head-block__link link-light _hover-el">
+								<span class="head-block__link-txt _hover">More about us</span>
+								<span class="head-block__link-ic">
+									<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+										<path d="M20.9891 10.2584L9.32203 21.9255" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M11.5979 10.2784L20.9892 10.2581L20.9697 19.6501" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</span>
+							</a>
+						</div>
+							@@include('html/_testimonials.htm',{})
+					</div>
+				</section>
+				<section class="ecomr-faq faq bg-gray pdd-tp pdd-btm">
+					<div class="faq__container">
+						<div class="faq__head head-block">
+							<h2 class="head-block__title title-main">
+								<span>Frequently Asked Questions</span>
+							</h2>
+							<div class="head-block__wrap">
+								<p class="head-block__txt txt-sm">Still need help?</p>
+								<a href="#" data-da=".faq__container,480,2" class="head-block__link link-light _hover-el">
+									<span class="head-block__link-txt _hover">Contact us</span>
+									<span class="head-block__link-ic">
+										<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+											<path d="M20.9891 10.2584L9.32203 21.9255" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M11.5979 10.2784L20.9892 10.2581L20.9697 19.6501" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</span>
+								</a>
+							</div>
+						</div>
+						<div class="faq__body">
+							<div data-spollers data-one-spoller data-spollers-speed="500" class="faq__spollers spollers-faq">
+								<details class="spollers-faq__item border-btm">
+									<summary class="spollers-faq__title title-faq-splr">
+										<span class="title-faq-splr__num txt-num">01</span>
+										<span class="title-faq-splr__block">
+											<span class="title-faq-splr__name txt-sms">
+												What is Polygraf AI?
+											</span>
+											<span class="title-faq-splr__open">
+												<span class="title-faq-splr__plus"></span>
+												<p class="title-faq-splr__read txt-22">Read</p>
+											</span>
+										</span>
+									</summary>
+									<div class="spollers-faq__body">
+										<div class="spollers-faq__content">
+											<h3 class="spollers-faq__sub-title txt-smx">
+												Polygraf AI is an AI protocol that identifies if digital content is reliable, trustworthy, and/or AI-generated. 
+											</h3>
+											<p class="spollers-faq__txt txt-smx">
+												Applied to online reviews, our free Chrome browser extension, Polygraf Trust Engine, uses our AI protocol to holistically analyze review content, product features, seller & buyer behavior, and provide you with an objective AI-generated star rating and trust score so that you can shop with confidence. Sellers can rely on the fact that reviews we analyze, good or bad, are genuine feedback from the customer experience and not from malicious actors looking to damage the brand. Satisfied customers also mean minimal returns.
+											</p>
+										</div>
+									</div>
+								</details>
+								<details class="spollers-faq__item border-btm">
+									<summary class="spollers-faq__title title-faq-splr">
+										<span class="title-faq-splr__num txt-num">02</span>
+										<span class="title-faq-splr__block">
+											<span class="title-faq-splr__name txt-sms">
+												What criteria are used by Polygraf Trust Engine when analyzing reviews & products?
+											</span>
+											<span class="title-faq-splr__open">
+												<span class="title-faq-splr__plus"></span>
+												<p class="title-faq-splr__read txt-22">Read</p>
+											</span>
+										</span>
+									</summary>
+									<div class="spollers-faq__body">
+										<div class="spollers-faq__content">
+											<h3 class="spollers-faq__sub-title txt-smx">
+												Lorem ipsum dolor, sit amet consectetur
+											</h3>
+											<p class="spollers-faq__txt txt-smx">
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel esse mollitia tempora minima sint? Quam ea, nisi nulla nesciunt in, totam architecto eius temporibus molestiae asperiores dolore animi ratione ex.
+											</p>
+										</div>
+									</div>
+								</details>
+								<details class="spollers-faq__item border-btm">
+									<summary class="spollers-faq__title title-faq-splr">
+										<span class="title-faq-splr__num txt-num">03</span>
+										<span class="title-faq-splr__block">
+											<span class="title-faq-splr__name txt-sms">
+												What e-commerce websites is Polygraf Trust Engine currently available on?
+											</span>
+											<span class="title-faq-splr__open">
+												<span class="title-faq-splr__plus"></span>
+												<p class="title-faq-splr__read txt-22">Read</p>
+											</span>
+										</span>
+									</summary>
+									<div class="spollers-faq__body">
+										<div class="spollers-faq__content">
+											<h3 class="spollers-faq__sub-title txt-smx">
+												Lorem ipsum dolor, sit amet consectetur
+											</h3>
+											<p class="spollers-faq__txt txt-smx">
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel esse mollitia tempora minima sint? Quam ea, nisi nulla nesciunt in, totam architecto eius temporibus molestiae asperiores dolore animi ratione ex.
+											</p>
+										</div>
+									</div>
+								</details>
+								<details class="spollers-faq__item border-btm">
+									<summary class="spollers-faq__title title-faq-splr">
+										<span class="title-faq-splr__num txt-num">04</span>
+										<span class="title-faq-splr__block">
+											<span class="title-faq-splr__name txt-sms">
+												What are Polygraf Trust scores and how are they calculated?
+											</span>
+											<span class="title-faq-splr__open">
+												<span class="title-faq-splr__plus"></span>
+												<p class="title-faq-splr__read txt-22">Read</p>
+											</span>
+										</span>
+									</summary>
+									<div class="spollers-faq__body">
+										<div class="spollers-faq__content">
+											<h3 class="spollers-faq__sub-title txt-smx">
+												Lorem ipsum dolor, sit amet consectetur
+											</h3>
+											<p class="spollers-faq__txt txt-smx">
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel esse mollitia tempora minima sint? Quam ea, nisi nulla nesciunt in, totam architecto eius temporibus molestiae asperiores dolore animi ratione ex.
+											</p>
+										</div>
+									</div>
+								</details>
+								<details class="spollers-faq__item border-btm">
+									<summary class="spollers-faq__title title-faq-splr">
+										<span class="title-faq-splr__num txt-num">05</span>
+										<span class="title-faq-splr__block">
+											<span class="title-faq-splr__name txt-sms">
+												What does a low or high Polygraf Trust score mean?
+											</span>
+											<span class="title-faq-splr__open">
+												<span class="title-faq-splr__plus"></span>
+												<p class="title-faq-splr__read txt-22">Read</p>
+											</span>
+										</span>
+									</summary>
+									<div class="spollers-faq__body">
+										<div class="spollers-faq__content">
+											<h3 class="spollers-faq__sub-title txt-smx">
+												Lorem ipsum dolor, sit amet consectetur
+											</h3>
+											<p class="spollers-faq__txt txt-smx">
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel esse mollitia tempora minima sint? Quam ea, nisi nulla nesciunt in, totam architecto eius temporibus molestiae asperiores dolore animi ratione ex.
+											</p>
+										</div>
+									</div>
+								</details>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="ecomr-reward bg-main mrb-sect pdd-btm">
+					<div class="ecomr-reward__container">
+						<div class="ecomr-reward__head head-block head-block_dark">
+							<h2 class="head-block__title title-main">
+								<span>Get Rewarded <br>
+									for using Polygraf</span>
+							</h2>
+							<a href="#" class="head-block__link link-dark _hover-el">
+								<span class="head-block__link-txt _hover">Our products</span>
+								<span class="head-block__link-ic">
+									<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+										<path d="M20.9891 10.2584L9.32203 21.9255" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M11.5979 10.2784L20.9892 10.2581L20.9697 19.6501" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</span>
+							</a>
+						</div>
+						<div class="ecomr-reward__body">
+							<ul class="list-prodts">
+								<li class="list-prodts__item border-btm border-btm_dark">
+									<div class="list-prodts__block">
+										<img class="list-prodts__ic" src="@img/icons/colored/download.svg" alt="icon">
+										<div class="list-prodts__txt-b">
+											<p class="txt-l">
+												Download
+											</p>
+										</div>
+									</div>
+									<div class="list-prodts__txt-s">
+										<p class="txt-sm-02">
+											Get the Polygraf browser extension.
+										</p>
+									</div>
+								</li>
+								<li class="list-prodts__item border-btm border-btm_dark">
+									<div class="list-prodts__block">
+										<img class="list-prodts__ic" src="@img/icons/colored/verify.svg" alt="icon">
+										<div class="list-prodts__txt-b">
+											<p class="txt-l">
+												Verify products<br> & reviews
+											</p>
+										</div>
+									</div>
+									<div class="list-prodts__txt-s">
+										<p class="txt-sm-02">
+											Use the extension to analyze reviews, 
+											products & sellers-shop with confidence.
+										</p>
+									</div>
+								</li>
+								<li class="list-prodts__item border-btm border-btm_dark">
+									<div class="list-prodts__block">
+										<img class="list-prodts__ic" src="@img/icons/colored/win-up.svg" alt="icon">
+										<div class="list-prodts__txt-b">
+											<p class="txt-l">
+												Win up to $25K!
+											</p>
+										</div>
+									</div>
+									<div class="list-prodts__txt-s">
+										<p class="txt-sm-02">
+											Each time you use Polygraf Trust Engine 
+											you get a chance to win in our sweepstakes.
+										</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="ecomr-reward__form form-ecomr">
+							<div class="form-ecomr__info">
+								<div class="form-ecomr__block">
+									<p class="form-ecomr__txt-b">
+										Refer a friend, get 
+										an additional chance 
+										to win up to $25K
+									</p>
+									<div class="form-ecomr__ref">
+										<p class="form-ecomr__txt-s txt-sm">Share your referral link:</p>
+										<div class="form-ecomr__copied">
+											<input class="form-ecomr__input" type="text" id="referralLink" readonly>
+											<img src="@img/icons/copied.svg" alt="copied">
+											<button class="form-ecomr__btn" id="copyButton" aria-label="Copy Link"></button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-ecomr__form">
+								<form class="form" data-dev data-popup-message="#form-message" action="" method="POST">
+									<div class="form__item">
+										<div class="form__num">01</div>
+										<div class="form__inputs">
+											<label for="formContactEmail" class="form__label txt-smx">E-mail *</label>
+											<input id="formContactEmail" placeholder="example@gmail.com" type="email" name="email" class="form__input input" data-required data-validate="email" data-error="Required field">
+										</div>
+									</div>
+									<button type="submit" class="form__submit btn_02">Send</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="ecomr-our mrb-sect">
+					<div class="ecomr-our__container">
+						<div class="ecomr-our__head head-block">
+							<h2 class="head-block__title title-main">
+								<span>More Our Products</span>
+							</h2>
+							<a href="#" data-da=".ecomr-our__container,480,3" class="head-block__link link-light _hover-el">
+								<span class="head-block__link-txt _hover">Contact us</span>
+								<span class="head-block__link-ic">
+									<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+										<path d="M20.9891 10.2584L9.32203 21.9255" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M11.5979 10.2784L20.9892 10.2581L20.9697 19.6501" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</span>
+							</a>
+						</div>
+						<div class="ecomr-our__sub-head sub-block">
+							<div class="sub-block__left">
+								<p class="sub-block__big txt-big">
+									AI-powered solutions that enable you to instantly trust what you read, hear and see.
+								</p>
+							</div>
+							<div class="sub-block__right">
+								<p class="sub-block__sm txt-sm">
+									We understand the growing challenges posed by human and AI-generated misinformation, and we are committed to addressing these issues head-on.
+								</p>
+							</div>
+						</div>
+						<div class="ecomr-our__block">
+							@@include('html/_prod-block.htm',{})
+						</div>
+					</div>
+				</section>
+				@@include('html/_get-in-touch.htm',{})
+			</main>
+			<div class="copied-ref">
+				<div class="copied-ref__img">
+					<img src="@img/icons/copied.svg" alt="copied">
+				</div>
+				<p class="copied-ref__txt txt-smx">
+					referral link copied
+				</p>
+			</div>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup-message.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>
