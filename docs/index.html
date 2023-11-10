@@ -10,7 +10,7 @@
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20231029230218">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231110152350">
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -26,6 +26,9 @@
 					</a>
 					<div class="header__btns">
 						<a href="#" data-da=".header__container,560,1" class="header__start btn"><span>Get started</span></a>
+						<a href="analyze.html" class="header__analyze btn">
+							<span>Analyze URL</span>
+						</a>
 						<button type="button" class="header__icon-menu icon-menu btn">
 							<span class="icon-menu__menu">Menu</span>
 							<span class="icon-menu__back">Go Back</span>
@@ -35,9 +38,9 @@
 				<div class="header__menu menu">
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="#" class="menu__link _hover">Home</a></li>
+							<li class="menu__item"><a href="index.html" class="menu__link _hover">Home</a></li>
 							<li class="menu__item menu__item-sub-menu">
-								<a href="#" class="menu__link _hover">
+								<a href="products.html" class="menu__link _hover">
 									Products
 									<svg class="menu__link-arr" xmlns="http://www.w3.org/2000/svg" width="11" height="6" viewBox="0 0 11 6" fill="none">
 										<path d="M9.875 0.812653L5.5 5.18765L1.125 0.812653" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -47,28 +50,28 @@
 									<div class="sub-menu__container">
 										<div class="sub-menu__block">
 											<ul class="sub-menu__list">
-												<li class="sub-menu__item"><a href="#" class="sub-menu__link">
+												<li class="sub-menu__item"><a href="ecommerce.html" class="sub-menu__link">
 														<span class="sub-menu__txt _hover">Browser extension</span>
 														<span class="sub-menu__arr">
 															<img class="sub-menu__arr-1 color-blue" src="img/icons/arr-angle.svg" alt="arrow">
 															<img class="sub-menu__arr-2 color-blue" src="img/icons/arr-angle.svg" alt="arrow">
 														</span>
 													</a></li>
-												<li class="sub-menu__item"><a href="#" class="sub-menu__link">
-														<spa class="sub-menu__txt _hover">AI Detection</spa>
+												<li class="sub-menu__item"><a href="ai-detection.html" class="sub-menu__link">
+														<span class="sub-menu__txt _hover">AI Detection</span>
 														<span class="sub-menu__arr">
 															<img class="sub-menu__arr-1 color-pink" src="img/icons/arr-angle.svg" alt="arrow">
 															<img class="sub-menu__arr-2 color-pink" src="img/icons/arr-angle.svg" alt="arrow">
 														</span>
 													</a></li>
-												<li class="sub-menu__item"><a href="#" class="sub-menu__link">
+												<li class="sub-menu__item"><a href="ai-identification.html" class="sub-menu__link">
 														<span class="sub-menu__txt _hover">Plagiarism Detection</span>
 														<span class="sub-menu__arr">
 															<img class="sub-menu__arr-1 color-orange" src="img/icons/arr-angle.svg" alt="arrow">
 															<img class="sub-menu__arr-2 color-orange" src="img/icons/arr-angle.svg" alt="arrow">
 														</span>
 													</a></li>
-												<li class="sub-menu__item"><a href="#" class="sub-menu__link">
+												<li class="sub-menu__item"><a href="ai-governance.html" class="sub-menu__link">
 														<span class="sub-menu__txt _hover">AI-G Solution</span>
 														<span class="sub-menu__arr">
 															<img class="sub-menu__arr-1 color-green" src="img/icons/arr-angle.svg" alt="arrow">
@@ -91,10 +94,10 @@
 
 							</li>
 							<li class="menu__item"><a href="about.html" class="menu__link _hover">About us</a></li>
-							<li class="menu__item"><a href="#" class="menu__link _hover">Safety</a></li>
-							<li class="menu__item"><a href="#" class="menu__link _hover">Careers</a></li>
-							<li class="menu__item"><a href="#" class="menu__link _hover">News</a></li>
-							<li class="menu__item"><a href="#" class="menu__link _hover">Contact</a></li>
+							<li class="menu__item"><a href="safety.html" class="menu__link _hover">Safety</a></li>
+							<li class="menu__item"><a href="careers.html" class="menu__link _hover">Careers</a></li>
+							<li class="menu__item"><a href="news.html" class="menu__link _hover">News</a></li>
+							<li class="menu__item"><a href="contact.html" class="menu__link _hover">Contact</a></li>
 						</ul>
 					</nav>
 					<div class="menu__texts">
@@ -133,7 +136,7 @@
 					</h1>
 				</div>
 			</section>
-			<section class="home-product product bg-prod-green">
+			<section class="home-product product bg-prod-green pdd-tp">
 				<div class="product__container">
 					<div class="product__head">
 						<h2 class="product__title title-main">
@@ -156,14 +159,14 @@
 								</h3>
 							</div>
 							<div data-spollers data-one-spoller data-spollers-speed="500" class="spollers-prod__body">
-								<details class="spollers-prod__details">
+								<details data-open class="spollers-prod__details">
 									<summary class="spollers-prod__summary">
 										<h4>
 											Proprietary AI & Data Governance Solution
 										</h4>
-										<div class="spollers-prod__icon">
+										<span class="spollers-prod__icon">
 											<img src="img/icons/arr-up-spoller.svg" alt="arrow">
-										</div>
+										</span>
 									</summary>
 									<div class="spollers-prod__content">
 										<div class="spollers-prod__info">
@@ -178,9 +181,9 @@
 										<h4>
 											Zero Trust Architecture
 										</h4>
-										<div class="spollers-prod__icon">
+										<span class="spollers-prod__icon">
 											<img src="img/icons/arr-up-spoller.svg" alt="arrow">
-										</div>
+										</span>
 									</summary>
 									<div class="spollers-prod__content">
 										<div class="spollers-prod__info">
@@ -195,9 +198,9 @@
 										<h4>
 											Seamless Integration
 										</h4>
-										<div class="spollers-prod__icon">
+										<span class="spollers-prod__icon">
 											<img src="img/icons/arr-up-spoller.svg" alt="arrow">
-										</div>
+										</span>
 									</summary>
 									<div class="spollers-prod__content">
 										<div class="spollers-prod__info">
@@ -212,9 +215,9 @@
 										<h4>
 											Real-time Data Privacy & Confidentiality Protection
 										</h4>
-										<div class="spollers-prod__icon">
+										<span class="spollers-prod__icon">
 											<img src="img/icons/arr-up-spoller.svg" alt="arrow">
-										</div>
+										</span>
 									</summary>
 									<div class="spollers-prod__content">
 										<div class="spollers-prod__info">
@@ -229,9 +232,9 @@
 										<h4>
 											Secure Data & Encryption
 										</h4>
-										<div class="spollers-prod__icon">
+										<span class="spollers-prod__icon">
 											<img src="img/icons/arr-up-spoller.svg" alt="arrow">
-										</div>
+										</span>
 									</summary>
 									<div class="spollers-prod__content">
 										<div class="spollers-prod__info">
@@ -246,9 +249,9 @@
 										<h4>
 											Integration with Large Language Models
 										</h4>
-										<div class="spollers-prod__icon">
+										<span class="spollers-prod__icon">
 											<img src="img/icons/arr-up-spoller.svg" alt="arrow">
-										</div>
+										</span>
 									</summary>
 									<div class="spollers-prod__content">
 										<div class="spollers-prod__info">
@@ -263,9 +266,9 @@
 										<h4>
 											Multi-Format Input Compatibility
 										</h4>
-										<div class="spollers-prod__icon">
+										<span class="spollers-prod__icon">
 											<img src="img/icons/arr-up-spoller.svg" alt="arrow">
-										</div>
+										</span>
 									</summary>
 									<div class="spollers-prod__content">
 										<div class="spollers-prod__info">
@@ -280,9 +283,9 @@
 										<h4>
 											Persistent Encoding and Decoding
 										</h4>
-										<div class="spollers-prod__icon">
+										<span class="spollers-prod__icon">
 											<img src="img/icons/arr-up-spoller.svg" alt="arrow">
-										</div>
+										</span>
 									</summary>
 									<div class="spollers-prod__content">
 										<div class="spollers-prod__info">
@@ -298,7 +301,7 @@
 					<div class="product__btm">
 						<div class="product__button">
 							<a href="#" class="product__link _hover-el">
-								<span class="product__link-txt _hover">Product page</span>
+								<span class="product__link-txt _hover">Try it now</span>
 								<span class="product__link-ic">
 									<img src="img/icons/arr-angle.svg" alt="arrow">
 								</span>
@@ -310,13 +313,13 @@
 					</div>
 				</div>
 			</section>
-			<section class="home-safety bg-main mrb-sect">
+			<section class="home-safety bg-main mrb-sect pdd-tp">
 				<div class="home-safety__container">
 					<div class="home-safety__head head-block head-block_dark">
 						<h2 class="head-block__title title-main">
 							<span>Safety</span>
 						</h2>
-						<a href="#" data-da=".home-safety__container,480,3" class="head-block__link link-dark _hover-el">
+						<a href="safety.html" data-da=".home-safety__container,480,3" class="head-block__link link-dark _hover-el">
 							<span class="head-block__link-txt _hover">More about safety</span>
 							<span class="head-block__link-ic">
 								<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
@@ -349,7 +352,7 @@
 						<h2 class="head-block__title title-main">
 							<span>What they’re saying</span>
 						</h2>
-						<a href="#" data-da=".home-testimonials__container,480,2" class="head-block__link link-light _hover-el">
+						<a href="about.html" data-da=".home-testimonials__container,480,2" class="head-block__link link-light _hover-el">
 							<span class="head-block__link-txt _hover">More about us</span>
 							<span class="head-block__link-ic">
 								<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
@@ -362,6 +365,38 @@
 					<div class="testimonials">
 						<div class="testimonials__slider swiper">
 							<div class="testimonials__wrapper swiper-wrapper">
+
+								<div class="testimonials__slide slide-testimls swiper-slide">
+									<div class="slide-testimls__item">
+										<div class="slide-testimls__image">
+											<div data-swiper-parallax-opacity="0" data-swiper-parallax-x="-100%" class="slide-testimls__img-body-ibg">
+												<picture><source srcset="img/people/matthew-stepka.webp" type="image/webp"><img src="img/people/matthew-stepka.jpg" alt="Matthew Stepka"></picture>
+											</div>
+										</div>
+										<div class="slide-testimls__body">
+											<div class="slide-testimls__img-quote">
+												<img src="img/icons/quote.svg" alt="icon quote">
+											</div>
+											<blockquote class="slide-testimls__quote">
+												<div data-swiper-parallax-opacity="0" data-swiper-parallax-x="-100%" data-swiper-parallax-duration="800" class="slide-testimls__text">
+													<p>
+														Polygraf is solving one of the most challenging problems posed by generative AI - being able to tell what’s real from fake. Authenticity is the foundation of our economy and society.
+													</p>
+												</div>
+												<div data-swiper-parallax-opacity="0" data-swiper-parallax-x="-100%" data-swiper-parallax-duration="1000" class="slide-testimls__name">
+													<cite>
+														<span>
+															Matthew Stepka
+														</span>
+														<span>
+															Managing Partner, Machina Ventures
+														</span>
+													</cite>
+												</div>
+											</blockquote>
+										</div>
+									</div>
+								</div>
 
 								<div class="testimonials__slide slide-testimls swiper-slide">
 									<div class="slide-testimls__item">
@@ -409,7 +444,7 @@
 											<blockquote class="slide-testimls__quote">
 												<div data-swiper-parallax-opacity="0" data-swiper-parallax-x="-100%" data-swiper-parallax-duration="800" class="slide-testimls__text">
 													<p>
-														Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, autem dolore? Vero vel ipsam voluptas impedit et nisi officia facere, nesciunt, autem dolores ullam, laborum quos sapiente quis veritatis voluptate.
+														I see in Polygraf the potential to redefine the landscape of data security through cutting-edge AI solutions. Their commitment to integrity, innovation, and privacy aligns with my vision for a safer digital world. I have invested to be part of their journey that's fortifying data protection for us all.
 													</p>
 												</div>
 												<div data-swiper-parallax-opacity="0" data-swiper-parallax-x="-100%" data-swiper-parallax-duration="1000" class="slide-testimls__name">
@@ -418,7 +453,7 @@
 															Mammad Karim
 														</span>
 														<span>
-															Lorem & Lorem
+															Managing Partner, Caucasus Ventures
 														</span>
 													</cite>
 												</div>
@@ -431,7 +466,39 @@
 									<div class="slide-testimls__item">
 										<div class="slide-testimls__image">
 											<div data-swiper-parallax-opacity="0" data-swiper-parallax-x="-100%" class="slide-testimls__img-body-ibg">
-												<picture><source srcset="img/people/koh-onazawa.webp" type="image/webp"><img src="img/people/koh-onazawa.jpeg" alt="Koh Onazawa"></picture>
+												<picture><source srcset="img/people/joseph-chan.webp" type="image/webp"><img src="img/people/joseph-chan.jpg" alt="Joseph Chan"></picture>
+											</div>
+										</div>
+										<div class="slide-testimls__body">
+											<div class="slide-testimls__img-quote">
+												<img src="img/icons/quote.svg" alt="icon quote">
+											</div>
+											<blockquote class="slide-testimls__quote">
+												<div data-swiper-parallax-opacity="0" data-swiper-parallax-x="-100%" data-swiper-parallax-duration="800" class="slide-testimls__text">
+													<p>
+														I support Polygraf.ai because we simply cannot live in a world where Al is used to spread disinformation by bad actors. It goes against what is core to the American culture of Openness, and Truth, Liberty, & Justice for all.
+													</p>
+												</div>
+												<div data-swiper-parallax-opacity="0" data-swiper-parallax-x="-100%" data-swiper-parallax-duration="1000" class="slide-testimls__name">
+													<cite>
+														<span>
+															Joseph Chan
+														</span>
+														<span>
+															Angel Investor
+														</span>
+													</cite>
+												</div>
+											</blockquote>
+										</div>
+									</div>
+								</div>
+
+								<div class="testimonials__slide slide-testimls swiper-slide">
+									<div class="slide-testimls__item">
+										<div class="slide-testimls__image">
+											<div data-swiper-parallax-opacity="0" data-swiper-parallax-x="-100%" class="slide-testimls__img-body-ibg">
+												<picture><source srcset="img/people/koh-onazawa.webp" type="image/webp"><img src="img/people/koh-onazawa.jpg" alt="Koh Onazawa"></picture>
 											</div>
 										</div>
 										<div class="slide-testimls__body">
@@ -463,7 +530,7 @@
 									<div class="slide-testimls__item">
 										<div class="slide-testimls__image">
 											<div data-swiper-parallax-opacity="0" data-swiper-parallax-x="-100%" class="slide-testimls__img-body-ibg">
-												<picture><source srcset="img/people/man.webp" type="image/webp"><img src="img/people/man.jpg" alt="Joseph Chan"></picture>
+												<picture><source srcset="img/people/randy-elliott.webp" type="image/webp"><img src="img/people/randy-elliott.jpg" alt="Randy Elliott"></picture>
 											</div>
 										</div>
 										<div class="slide-testimls__body">
@@ -473,13 +540,13 @@
 											<blockquote class="slide-testimls__quote">
 												<div data-swiper-parallax-opacity="0" data-swiper-parallax-x="-100%" data-swiper-parallax-duration="800" class="slide-testimls__text">
 													<p>
-														"I support Polygraf.ai because we simply cannot live in a world where AI is used to spread disinformation by bad actors. It goes against what is core to the American culture of Openness, and Truth, Liberty, & Justice for all."
+														In a world where we don’t know what is real Polygraf is the trusted source to help clear up the confusion. Polygraf helps protect you and your products from misinformation. Polygraf trusted AI technology helping protect you, your products and your reputation from malicious intent. Security is becoming less and secure Polygraf is the trusted source to clear out the confusion of what is real. Some ideas but feel free to write up something even better.
 													</p>
 												</div>
 												<div data-swiper-parallax-opacity="0" data-swiper-parallax-x="-100%" data-swiper-parallax-duration="1000" class="slide-testimls__name">
 													<cite>
 														<span>
-															Joseph Chan
+															Randy Elliott
 														</span>
 														<span>
 															Angel Investor
@@ -491,109 +558,173 @@
 									</div>
 								</div>
 
+								<div class="testimonials__slide slide-testimls swiper-slide">
+									<div class="slide-testimls__item">
+										<div class="slide-testimls__image">
+											<div data-swiper-parallax-opacity="0" data-swiper-parallax-x="-100%" class="slide-testimls__img-body-ibg">
+												<picture><source srcset="img/people/manmeet.webp" type="image/webp"><img src="img/people/manmeet.jpg" alt="Manmeet Singh Bhasin"></picture>
+											</div>
+										</div>
+										<div class="slide-testimls__body">
+											<div class="slide-testimls__img-quote">
+												<img src="img/icons/quote.svg" alt="icon quote">
+											</div>
+											<blockquote class="slide-testimls__quote">
+												<div data-swiper-parallax-opacity="0" data-swiper-parallax-x="-100%" data-swiper-parallax-duration="800" class="slide-testimls__text">
+													<p>
+														With an exponentially vast amount of user-generated and AI- generated content flooding the internet, there is a critical need for accurate content labeling on the internet. Polygraf’s AI verification platform will be particularly useful for government agencies, enterprises, media franchises, cyber security companies, and public figures amongst many others.
+													</p>
+												</div>
+												<div data-swiper-parallax-opacity="0" data-swiper-parallax-x="-100%" data-swiper-parallax-duration="1000" class="slide-testimls__name">
+													<cite>
+														<span>
+															Manmeet Singh Bhasin
+														</span>
+														<span>
+															Managing Partner, Punja Global Ventures
+														</span>
+													</cite>
+												</div>
+											</blockquote>
+										</div>
+									</div>
+								</div>
+
+								<div class="testimonials__slide slide-testimls swiper-slide">
+									<div class="slide-testimls__item">
+										<div class="slide-testimls__image">
+											<div data-swiper-parallax-opacity="0" data-swiper-parallax-x="-100%" class="slide-testimls__img-body-ibg">
+												<picture><source srcset="img/people/min-park.webp" type="image/webp"><img src="img/people/min-park.jpg" alt="Min Park"></picture>
+											</div>
+										</div>
+										<div class="slide-testimls__body">
+											<div class="slide-testimls__img-quote">
+												<img src="img/icons/quote.svg" alt="icon quote">
+											</div>
+											<blockquote class="slide-testimls__quote">
+												<div data-swiper-parallax-opacity="0" data-swiper-parallax-x="-100%" data-swiper-parallax-duration="800" class="slide-testimls__text">
+													<p>
+														I support Polygraf because sometimes technology is only viewed in its potential but not the risk and I love how this company is able to crater the risks of this ever-evolving technology.
+													</p>
+												</div>
+												<div data-swiper-parallax-opacity="0" data-swiper-parallax-x="-100%" data-swiper-parallax-duration="1000" class="slide-testimls__name">
+													<cite>
+														<span>
+															Min Park
+														</span>
+														<span>
+															General Partner ,RNR Capital
+														</span>
+													</cite>
+												</div>
+											</blockquote>
+										</div>
+									</div>
+								</div>
+
 							</div>
-							<div class="testimonials__buttons">
-								<button type="button" class="testimonials__btn swiper-button-prev">
-									<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
-										<path d="M28.8022 16.7855H6.92725" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-										<path d="M19.9795 7.99983L28.8024 16.7848L19.9795 25.5713" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-									</svg>
-								</button>
-								<button type="button" class="testimonials__btn swiper-button-next">
-									<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
-										<path d="M28.8022 16.7855H6.92725" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-										<path d="M19.9795 7.99983L28.8024 16.7848L19.9795 25.5713" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-									</svg>
-								</button>
+							<div class="testimonials__buttons slider-btns">
+								<div class="slider-btns__wrap">
+									<button type="button" class="slider__btn swiper-button-prev">
+										<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+											<path d="M28.8022 16.7855H6.92725" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M19.9795 7.99983L28.8024 16.7848L19.9795 25.5713" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</button>
+									<button type="button" class="slider__btn swiper-button-next">
+										<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+											<path d="M28.8022 16.7855H6.92725" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M19.9795 7.99983L28.8024 16.7848L19.9795 25.5713" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section class="home-started bg-main mrb-sect">
-				<div class="home-started__container">
-					<div class="get-started">
-						<div class="get-started__head head-block head-block_dark">
-							<h2 class="head-block__title title-main">
-								<span>Get started</span>
-							</h2>
-							<a href="#" class="head-block__link link-dark _hover-el">
-								<span class="head-block__link-txt _hover">All products</span>
-								<span class="head-block__link-ic">
-									<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-										<path d="M20.9891 10.2584L9.32203 21.9255" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-										<path d="M11.5979 10.2784L20.9892 10.2581L20.9697 19.6501" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-									</svg>
-								</span>
-							</a>
+			<section class="home-started get-started bg-main mrb-sect pdd-tp">
+				<div class="get-started__container">
+					<div class="get-started__head head-block head-block_dark">
+						<h2 class="head-block__title title-main">
+							<span>Get started</span>
+						</h2>
+						<a href="products.html" class="head-block__link link-dark _hover-el">
+							<span class="head-block__link-txt _hover">All products</span>
+							<span class="head-block__link-ic">
+								<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+									<path d="M20.9891 10.2584L9.32203 21.9255" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M11.5979 10.2784L20.9892 10.2581L20.9697 19.6501" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</span>
+						</a>
+					</div>
+					<div class="get-started__body">
+						<div class="get-started__info">
+							<div class="get-started__block">
+								<p class="get-started__txt-big txt-big">
+									Browse our products.
+								</p>
+								<p class="get-started__txt-sm txt-sm">
+									Polygraf’s AI Governance & Data Integrity Suite is dedicated to creating a reliable and authentic digital ecosystem where humans and machines coexist.
+								</p>
+								<a href="contact.html" class="get-started__btn btn btn_01">Get in touch</a>
+							</div>
 						</div>
-						<div class="get-started__body">
-							<div class="get-started__info">
-								<div class="get-started__block">
-									<p class="get-started__txt-big txt-big">
-										Browse our products.
-									</p>
-									<p class="get-started__txt-sm txt-sm">
-										Polygraf’s AI Governance & Data Integrity Suite is dedicated to creating a reliable and authentic digital ecosystem where humans and machines coexist.
-									</p>
-									<a href="#" class="get-started__btn btn btn_01">Get in touch</a>
-								</div>
-							</div>
-							<div class="get-started__products">
-								<h3 class="get-started__title">
-									Discover all our products:
-								</h3>
-								<ul class="get-started__list list-started">
-									<li class="list-started__item">
-										<a href="#" class="list-started__link">
-											<span class="list-started__img-ic">
-												<img src="img/icons/governance.svg" alt="icon governance">
-											</span>
-											<span class="list-started__txt">AI Governance</span>
-											<svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36" fill="none">
-												<path d="M24.488 12.4683L10.8764 26.08" stroke="#45F9E3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-												<path d="M13.5311 12.4915L24.4875 12.4679L24.4648 23.4253" stroke="#45F9E3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-											</svg>
-										</a>
-									</li>
-									<li class="list-started__item">
-										<a href="#" class="list-started__link">
-											<span class="list-started__img-ic">
-												<img src="img/icons/plagiarism.svg" alt="icon plagiarism">
-											</span>
-											<span class="list-started__txt">AI Source Detection</span>
-											<svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36" fill="none">
-												<path d="M24.488 12.4683L10.8764 26.08" stroke="#F747A1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-												<path d="M13.5311 12.4915L24.4875 12.4679L24.4648 23.4253" stroke="#F747A1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-											</svg>
-										</a>
-									</li>
-									<li class="list-started__item">
-										<a href="#" class="list-started__link">
-											<span class="list-started__img-ic">
-												<img src="img/icons/detection.svg" alt="icon detection">
-											</span>
-											<span class="list-started__txt">AI Identification</span>
-											<svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36" fill="none">
-												<path d="M24.488 12.4683L10.8764 26.08" stroke="#FBBF5B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-												<path d="M13.5311 12.4915L24.4875 12.4679L24.4648 23.4253" stroke="#FBBF5B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-											</svg>
-										</a>
-									</li>
-									<li class="list-started__item">
-										<a href="#" class="list-started__link">
-											<span class="list-started__img-ic">
-												<img src="img/icons/extension.svg" alt="icon extension">
-											</span>
-											<span class="list-started__txt">ECommerce Trust Engine</span>
-											<svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36" fill="none">
-												<path d="M24.488 12.4683L10.8764 26.08" stroke="#4E79B9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-												<path d="M13.5311 12.4915L24.4875 12.4679L24.4648 23.4253" stroke="#4E79B9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-											</svg>
-										</a>
-									</li>
-								</ul>
-							</div>
+						<div class="get-started__products">
+							<h3 class="get-started__title">
+								Discover all our products:
+							</h3>
+							<ul class="get-started__list list-started">
+								<li class="list-started__item">
+									<a href="ai-governance.html" class="list-started__link">
+										<span class="list-started__img-ic">
+											<img src="img/icons/governance.svg" alt="icon">
+										</span>
+										<span class="list-started__txt">AI Governance</span>
+										<svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36" fill="none">
+											<path d="M24.488 12.4683L10.8764 26.08" stroke="#45F9E3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M13.5311 12.4915L24.4875 12.4679L24.4648 23.4253" stroke="#45F9E3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</a>
+								</li>
+								<li class="list-started__item">
+									<a href="ai-detection.html" class="list-started__link">
+										<span class="list-started__img-ic">
+											<img src="img/icons/plagiarism.svg" alt="icon">
+										</span>
+										<span class="list-started__txt">AI Source Detection</span>
+										<svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36" fill="none">
+											<path d="M24.488 12.4683L10.8764 26.08" stroke="#F747A1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M13.5311 12.4915L24.4875 12.4679L24.4648 23.4253" stroke="#F747A1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</a>
+								</li>
+								<li class="list-started__item">
+									<a href="ai-identification.html" class="list-started__link">
+										<span class="list-started__img-ic">
+											<img src="img/icons/detection.svg" alt="icon">
+										</span>
+										<span class="list-started__txt">AI Identification</span>
+										<svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36" fill="none">
+											<path d="M24.488 12.4683L10.8764 26.08" stroke="#FBBF5B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M13.5311 12.4915L24.4875 12.4679L24.4648 23.4253" stroke="#FBBF5B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</a>
+								</li>
+								<li class="list-started__item">
+									<a href="ecommerce.html" class="list-started__link">
+										<span class="list-started__img-ic">
+											<img src="img/icons/extension.svg" alt="icon">
+										</span>
+										<span class="list-started__txt">ECommerce Trust Engine</span>
+										<svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36" fill="none">
+											<path d="M24.488 12.4683L10.8764 26.08" stroke="#4E79B9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M13.5311 12.4915L24.4875 12.4679L24.4648 23.4253" stroke="#4E79B9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</a>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -604,7 +735,7 @@
 						<h2 class="head-block__title title-main">
 							<span>News & Updates</span>
 						</h2>
-						<a href="#" class="head-block__link link-light _hover-el">
+						<a href="news.html" class="head-block__link link-light _hover-el">
 							<span class="head-block__link-txt _hover">All</span>
 							<span class="head-block__link-ic">
 								<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
@@ -615,7 +746,6 @@
 						</a>
 					</div>
 					<div class="home-news__news-upd news-upd">
-
 						<article class="news-upd__item">
 							<div class="news-upd__data">
 								<div class="news-upd__data-wrap border-btm">
@@ -656,7 +786,6 @@
 								</div>
 							</div>
 						</article>
-
 						<article class="news-upd__item">
 							<div class="news-upd__data">
 								<div class="news-upd__data-wrap border-btm">
@@ -697,17 +826,15 @@
 								</div>
 							</div>
 						</article>
-
-
 					</div>
 				</div>
 			</section>
-			<section class="get">
+			<section class="get bg-f1">
 				<div class="get__img">
 					<img src="img/el/git-in-touch.svg" alt="square">
 				</div>
-				<div class="get__link link-get">
-					<a href="#" class="link-get__link">
+				<h2 class="get__link link-get">
+					<a href="contact.html" class="link-get__link">
 						<span class="link-get__word">
 							<span class="link-get__letter">G</span>
 							<span class="link-get__letter">e</span>
@@ -725,7 +852,7 @@
 							<path d="M52.9419 46.2517L95.2025 46.1607L95.115 88.4248" stroke="#0A0A0A" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round" />
 						</svg>
 					</a>
-				</div>
+				</h2>
 				<div class="get__info">
 					<p class="get__txt">
 						Contact us today to learn more about how Polygraf AI can revolutionize your content verification process.
@@ -744,49 +871,49 @@
 					</div>
 					<nav class="footer__nav">
 						<div class="footer__block">
-							<h2 class="footer__title txt-sm txt-sm_f-7">Company</h2>
+							<h2 class="footer__title txt-smx txt-smx_f-7">Company</h2>
 							<ul class="footer__list">
 								<li class="footer__item">
-									<a href="#" class="footer__link txt-sm txt-sm_f-4 _hover">Home</a>
+									<a href="#" class="footer__link txt-smx txt-smx_f-4 _hover">Home</a>
 								</li>
 								<li class="footer__item">
-									<a href="#" class="footer__link txt-sm txt-sm_f-4 _hover">About us</a>
+									<a href="#" class="footer__link txt-smx txt-smx_f-4 _hover">About us</a>
 								</li>
 								<li class="footer__item">
-									<a href="#" class="footer__link txt-sm txt-sm_f-4 _hover">Safety</a>
+									<a href="#" class="footer__link txt-smx txt-smx_f-4 _hover">Safety</a>
 								</li>
 								<li class="footer__item">
-									<a href="#" class="footer__link txt-sm txt-sm_f-4 _hover">Careers</a>
+									<a href="#" class="footer__link txt-smx txt-smx_f-4 _hover">Careers</a>
 								</li>
 								<li class="footer__item">
-									<a href="#" class="footer__link txt-sm txt-sm_f-4 _hover">News</a>
+									<a href="#" class="footer__link txt-smx txt-smx_f-4 _hover">News</a>
 								</li>
 								<li class="footer__item">
-									<a href="#" class="footer__link txt-sm txt-sm_f-4 _hover">Contact</a>
+									<a href="#" class="footer__link txt-smx txt-smx_f-4 _hover">Contact</a>
 								</li>
 							</ul>
 						</div>
 						<div class="footer__block">
-							<h2 class="footer__title txt-sm txt-sm_f-7">Products</h2>
+							<h2 class="footer__title txt-smx txt-smx_f-7">Products</h2>
 							<ul class="footer__list">
 								<li class="footer__item">
-									<a href="#" class="footer__link txt-sm txt-sm_f-4 _hover">Browser extension</a>
+									<a href="#" class="footer__link txt-smx txt-smx_f-4 _hover">Browser extension</a>
 								</li>
 								<li class="footer__item">
-									<a href="#" class="footer__link txt-sm txt-sm_f-4 _hover">AI Detection</a>
+									<a href="#" class="footer__link txt-smx txt-smx_f-4 _hover">AI Detection</a>
 								</li>
 								<li class="footer__item">
-									<a href="#" class="footer__link txt-sm txt-sm_f-4 _hover">Plagiarism Detection</a>
+									<a href="#" class="footer__link txt-smx txt-smx_f-4 _hover">Plagiarism Detection</a>
 								</li>
 								<li class="footer__item">
-									<a href="#" class="footer__link txt-sm txt-sm_f-4 _hover">AI-G Solution</a>
+									<a href="#" class="footer__link txt-smx txt-smx_f-4 _hover">AI-G Solution</a>
 								</li>
 							</ul>
 						</div>
 					</nav>
 					<div class="footer__address">
 						<div class="footer__address-wrapp">
-							<h2 class="footer__title footer__title_addr txt-sm txt-sm_f-7">
+							<h2 class="footer__title footer__title_addr txt-smx txt-smx_f-7">
 								<span class="footer__ic">
 									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="18" viewBox="0 0 16 18" fill="none">
 										<path fill-rule="evenodd" clip-rule="evenodd" d="M0.916504 7.59846C0.916504 3.76523 4.11974 0.666992 7.99438 0.666992C11.8799 0.666992 15.0832 3.76523 15.0832 7.59846C15.0832 9.53007 14.3807 11.3233 13.2244 12.8433C11.9488 14.5199 10.3766 15.9807 8.60696 17.1273C8.20193 17.3923 7.8364 17.4123 7.39188 17.1273C5.61212 15.9807 4.03991 14.5199 2.77525 12.8433C1.61816 11.3233 0.916504 9.53007 0.916504 7.59846ZM5.66169 7.81428C5.66169 9.09841 6.70955 10.1084 7.99438 10.1084C9.28004 10.1084 10.338 9.09841 10.338 7.81428C10.338 6.54015 9.28004 5.48102 7.99438 5.48102C6.70955 5.48102 5.66169 6.54015 5.66169 7.81428Z" fill="white" />
@@ -818,6 +945,9 @@
 							<li class="social-footer__item">
 								<a href="#" class="social-footer__link _hover">Instagram</a>
 							</li>
+							<li class="social-footer__item">
+								<a href="#" class="social-footer__link _hover">Linkedin</a>
+							</li>
 						</ul>
 					</div>
 					<div class="footer__btn">
@@ -833,7 +963,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20231029230218"></script>
+	<script src="js/app.min.js?_v=20231110152350"></script>
 </body>
 
 </html>
