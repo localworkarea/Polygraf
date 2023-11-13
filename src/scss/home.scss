@@ -1107,7 +1107,6 @@
   }
   // .ecomr-help__video
   &__video {
-    z-index: 1;
   }
 }
 
@@ -1863,7 +1862,6 @@
   }
   // .identf-try__body
   &__body {
-    z-index: 2;
     // padding: toRem(30);
     // background: rgba(245, 196, 81, 0.31);
     // border: toRem(1) solid #D7D7D7;
@@ -2281,6 +2279,9 @@
   }
   // .governance-scheme__head
   &__head {
+    .head-block__link {
+      display: none;
+    }
   }
   // .governance-scheme__body
   &__body {

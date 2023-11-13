@@ -3047,10 +3047,6 @@ body::after {
   transition: all 0.3s ease;
 }
 
-.ecomr-help__video {
-  z-index: 1;
-}
-
 .tabs-ecomr {
   display: -ms-grid;
   display: grid;
@@ -3508,10 +3504,6 @@ body::after {
   margin-bottom: 1.25rem;
 }
 
-.identf-try__body {
-  z-index: 2;
-}
-
 .button-identf {
   width: 100%;
   padding: 1.25rem 0;
@@ -3577,6 +3569,10 @@ body::after {
 
 .governance-polygraf .block-sec__txt-big {
   color: #0A0A0A !important;
+}
+
+.governance-scheme__head .head-block__link {
+  display: none;
 }
 
 .governance-scheme__body {
