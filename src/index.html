@@ -5,7 +5,16 @@
 	})
 	<body>
 		<div class="wrapper page-home">
-			@@include('html/_header.htm',{})
+			@@include('html/_header.htm',{
+				"class":"",
+				"home":"active",
+				"products":"",
+				"about":"",
+				"safety":"",
+				"careers":"",
+				"news":"",
+				"contact":""
+			})
 			<main class="page">
 				<section class="hero">
 					<div class="hero__video">
@@ -25,7 +34,7 @@
 									<img src="@img/icons/play.svg" alt="play">
 								</span>
 							</button>
-							<a href="#" class="video-nav__link _hover-el">
+							<a href="ai-governance.html" class="video-nav__link _hover-el">
 								<span class="video-nav__txt _hover">Try now</span>
 								<img  class="video-nav__ic color-white " src="@img/icons/arr-angle.svg" alt="arrow">
 							</a>
@@ -250,7 +259,7 @@
 					<div class="home-testimonials__container">
 						<div class="home-testimonials__head head-block">
 							<h2 class="head-block__title title-main">
-								<span>What they’re saying</span>
+								<span>What They’re Saying</span>
 							</h2>
 							<a href="about.html" data-da=".home-testimonials__container,480,2" class="head-block__link link-light _hover-el">
 								<span class="head-block__link-txt _hover">More about us</span>
@@ -269,7 +278,7 @@
 					<div class="get-started__container">
 						<div class="get-started__head head-block head-block_dark">
 							<h2 class="head-block__title title-main">
-								<span>Get started</span>
+								<span>Get Started</span>
 							</h2>
 							<a href="products.html" class="head-block__link link-dark _hover-el">
 								<span class="head-block__link-txt _hover">All products</span>
@@ -299,19 +308,19 @@
 								</h3>
 								<ul class="get-started__list list-started">
 									<li class="list-started__item">
-										<a href="ai-governance.html" class="list-started__link">
+										<a href="ai-governance.html" class="list-started__link ai-link-01">
 											<span class="list-started__img-ic">
 												<img src="@img/icons/governance.svg" alt="icon">
 											</span>
 											<span class="list-started__txt">AI Governance</span>
 											<svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36" fill="none">
-												<path d="M24.488 12.4683L10.8764 26.08" stroke="#45F9E3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-												<path d="M13.5311 12.4915L24.4875 12.4679L24.4648 23.4253" stroke="#45F9E3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+												<path d="M24.488 12.4683L10.8764 26.08" stroke="#7BFEEE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+												<path d="M13.5311 12.4915L24.4875 12.4679L24.4648 23.4253" stroke="#7BFEEE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 											</svg>
 										</a>
 									</li>
 									<li class="list-started__item">
-										<a href="ai-detection.html" class="list-started__link">
+										<a href="ai-detection.html" class="list-started__link ai-link-02">
 											<span class="list-started__img-ic">
 												<img src="@img/icons/plagiarism.svg" alt="icon">
 											</span>
@@ -323,7 +332,7 @@
 										</a>
 									</li>
 									<li class="list-started__item">
-										<a href="ai-identification.html" class="list-started__link">
+										<a href="ai-identification.html" class="list-started__link ai-link-03">
 											<span class="list-started__img-ic">
 												<img src="@img/icons/detection.svg" alt="icon">
 											</span>
@@ -335,7 +344,7 @@
 										</a>
 									</li>
 									<li class="list-started__item">
-										<a href="ecommerce.html" class="list-started__link">
+										<a href="ecommerce.html" class="list-started__link ai-link-04">
 											<span class="list-started__img-ic">
 												<img src="@img/icons/extension.svg" alt="icon">
 											</span>

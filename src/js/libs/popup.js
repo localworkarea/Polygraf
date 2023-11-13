@@ -34,8 +34,8 @@ class Popup {
 			closeEsc: true, // Закриття ESC
 			bodyLock: false, // Блокування скролла
 			hashSettings: {
-				location: true, // Хеш в адресному рядку
-				goHash: true, // Перехід по наявності в адресному рядку
+				location: false, // Хеш в адресному рядку
+				goHash: false, // Перехід по наявності в адресному рядку
 			},
 			on: { // Події
 				beforeOpen: function () { },
@@ -129,6 +129,7 @@ class Popup {
 
 				return;
 			}
+			
 			// Закриття на порожньому місці (popup__wrapper) та кнопки закриття (popup__close) для закриття
 			const buttonClose = e.target.closest(`[${this.options.attributeCloseButton}]`);
 			if (buttonClose || !e.target.closest(`.${this.options.classes.popupContent}`) && this.isOpen) {

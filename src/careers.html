@@ -6,14 +6,21 @@
 	<body>
 		<div class="wrapper page-careers">
 			@@include('html/_header.htm',{
-				"class":"header-dark"
+				"class":"header-dark",
+				"careers":"active",
+				"products":"",
+				"about":"",
+				"home":"",
+				"safety":"",
+				"news":"",
+				"contact":""
 			})
 			<main class="page">
 				<section class="careers-hero mrb-sect mrt-hero">
 					<div class="careers-hero__container">
 						<div class="careers-hero__head head-block">
 							<h2 class="head-block__title title-main">
-								<span>Join the band</span>
+								<span>Join The Band</span>
 							</h2>
 							<a href="#" data-da=".careers-hero__container,480,3" class="head-block__link link-light _hover-el">
 								<span class="head-block__link-txt _hover">View all open roles</span>
@@ -41,17 +48,6 @@
 							<div class="careers-hero__image-ibg">
 								<img data-src="@img/photos/careers-hero.jpg" alt="image">
 							</div>
-							<div class="careers-hero__links links-prod">
-								<div class="links-prod__body links-prod__body_two">
-									<a href="#" class="links-prod__back">
-										<span>Explore all jobs</span>
-										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-											<path d="M14.6145 6.00697L6.83643 13.785" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-											<path d="M8.3537 6.0202L14.6145 6.00672L14.6016 12.2681" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-										</svg>
-									</a>
-								</div>
-							</div>
 						</div>
 					</div>
 				</section>
@@ -59,7 +55,7 @@
 					<div class="careers-mission__container">
 						<div class="careers-mission__head head-block">
 							<h2 class="head-block__title title-main">
-								<span>Our mission</span>
+								<span>Our Mission</span>
 							</h2>
 							<a href="about.html" data-da=".careers-mission__container,480,2" class="head-block__link link-light _hover-el">
 								<span class="head-block__link-txt _hover">More about us</span>
@@ -75,7 +71,7 @@
 							<div class="slide-testimls__item">
 								<div class="slide-testimls__image">
 									<div class="slide-testimls__img-body-ibg">
-										<img data-src="@img/people/anton-stepaniuk.jpg" alt="Anton Stepaniuk">
+										<img data-src="@img/people/anton-stepaniuk-2.jpg" alt="Anton Stepaniuk">
 									</div>
 								</div>
 								<div class="slide-testimls__body">
@@ -108,7 +104,7 @@
 					<div class="product__container">
 						<div class="product__head">
 							<h2 class="product__title title-main">
-								<span>Why work at Polygraf?</span>
+								<span>Why Work At Polygraf?</span>
 							</h2>
 						</div>
 						<div class="product__body">
@@ -217,7 +213,7 @@
 					<div class="careers-hire__container">
 						<div class="careers-hire__head head-block">
 							<h2 class="head-block__title title-main">
-								<span>How we hire?</span>
+								<span>How We Hire?</span>
 							</h2>
 							<a href="contact.html" data-da=".careers-hire__container,480,3" class="head-block__link link-light _hover-el">
 								<span class="head-block__link-txt _hover">Contact us</span>
@@ -613,8 +609,22 @@
 			</main>
 			@@include('html/_footer.htm',{})
 		</div>
+		<div class="links-prod">
+			<div class="links-prod__container">
+				<div class="links-prod__body links-prod__body_two">
+					<a href="#" class="links-prod__back btn btn_02">
+						<span>Explore all jobs</span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+							<path d="M14.6145 6.00697L6.83643 13.785" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M8.3537 6.0202L14.6145 6.00672L14.6016 12.2681" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
 		@@include('html/_popup-job-form.htm',{})
 		@@include('html/_popup-message.htm',{})
+		<script src="files/intl_tel_input/js/intlTelInput.min.js"></script>
 		@@include('html/_js.htm',{})
 	</body>
 </html>

@@ -1002,8 +1002,8 @@
                     closeEsc: true,
                     bodyLock: false,
                     hashSettings: {
-                        location: true,
-                        goHash: true
+                        location: false,
+                        goHash: false
                     },
                     on: {
                         beforeOpen: function() {},
@@ -5065,6 +5065,13 @@
         }
         const da = new DynamicAdapt("max");
         da.init();
+        const inputPhone = document.querySelector(".phone_input");
+        if (inputPhone) intlTelInput(inputPhone, {
+            utilsScript: "files/intl_tel_input/js/utils.js",
+            customPlaceholder: function(selectedCountryPlaceholder, selectedCountryData) {
+                return "+";
+            }
+        });
         const menuSubMenuItem = document.querySelector(".menu__item-sub-menu");
         if (menuSubMenuItem) {
             const header = document.querySelector(".header");
@@ -5192,7 +5199,23 @@
                 }));
             }
         }));
-        window["FLS"] = true;
+        const linksProd = document.querySelector(".links-prod");
+        if (linksProd) {
+            const footer = document.querySelector(".footer");
+            const links = document.querySelector(".links-prod");
+            const options = {
+                root: null,
+                rootMargin: "0px",
+                threshold: 0
+            };
+            const observer = new IntersectionObserver((entries => {
+                entries.forEach((entry => {
+                    if (entry.isIntersecting) links.classList.add("_hidden"); else links.classList.remove("_hidden");
+                }));
+            }), options);
+            observer.observe(footer);
+        }
+        window["FLS"] = false;
         isWebp();
         addTouchClass();
         addLoadedClass();

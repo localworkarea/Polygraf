@@ -6,7 +6,14 @@
 	<body>
 		<div class="wrapper page-products">
 			@@include('html/_header.htm',{
-				"class":"header-dark"
+				"class":"header-dark",
+				"products":"active",
+				"about":"",
+				"home":"",
+				"safety":"",
+				"careers":"",
+				"news":"",
+				"contact":""
 			})
 			<main class="page">
 				<section class="products-about mrb-sect mrt-hero">
@@ -40,40 +47,6 @@
 						<div class="products-about__body">
 							<div class="products-about__image-ibg">
 								<img data-src="@img/photos/procucts-about.jpg" alt="image">
-							</div>
-							<div class="products-about__links links-prod">
-								<div class="links-prod__body">
-									<div class="links-prod__items bg-main">
-										<a href="ai-governance.html" class="links-prod__link link-01 _hover-el">
-											<span class="_hover">AI Governance</span>
-											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-												<path d="M16.1717 8.34696L7.18279 17.3359"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-												<path d="M8.93576 8.36228L16.1712 8.3467L16.1562 15.5828"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-											</svg>
-										</a>
-										<a href="ai-detection.html" class="links-prod__link link-02 _hover-el">
-											<span class="_hover">AI Source Detection</span>
-											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-												<path d="M16.1717 8.34696L7.18279 17.3359"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-												<path d="M8.93576 8.36228L16.1712 8.3467L16.1562 15.5828"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-											</svg>
-										</a>
-										<a href="ai-identification.html" class="links-prod__link link-03 _hover-el">
-											<span class="_hover">AI  Identification</span>
-											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-												<path d="M16.1717 8.34696L7.18279 17.3359"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-												<path d="M8.93576 8.36228L16.1712 8.3467L16.1562 15.5828"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-											</svg>
-										</a>
-										<a href="ecommerce.html" class="links-prod__link link-04 _hover-el">
-											<span class="_hover">ECommerce Trust Engine</span>
-											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-												<path d="M16.1717 8.34696L7.18279 17.3359"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-												<path d="M8.93576 8.36228L16.1712 8.3467L16.1562 15.5828"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-											</svg>
-										</a>
-									</div>
-								</div>
 							</div>
 						</div>
 					</div>
@@ -820,6 +793,42 @@
 				@@include('html/_get-in-touch.htm',{})
 			</main>
 			@@include('html/_footer.htm',{})
+		</div>
+		<div class="links-prod">
+			<div class="links-prod__container">
+				<div class="links-prod__body links-prod__body_one">
+					<div class="links-prod__items bg-main">
+						<a href="ai-governance.html" class="links-prod__link link-01 _hover-el">
+							<span class="_hover">AI Governance</span>
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+								<path d="M16.1717 8.34696L7.18279 17.3359"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M8.93576 8.36228L16.1712 8.3467L16.1562 15.5828"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</a>
+						<a href="ai-detection.html" class="links-prod__link link-02 _hover-el">
+							<span class="_hover">AI Source Detection</span>
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+								<path d="M16.1717 8.34696L7.18279 17.3359"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M8.93576 8.36228L16.1712 8.3467L16.1562 15.5828"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</a>
+						<a href="ai-identification.html" class="links-prod__link link-03 _hover-el">
+							<span class="_hover">AI  Identification</span>
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+								<path d="M16.1717 8.34696L7.18279 17.3359"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M8.93576 8.36228L16.1712 8.3467L16.1562 15.5828"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</a>
+						<a href="ecommerce.html" class="links-prod__link link-04 _hover-el">
+							<span class="_hover">eCommerce Trust Engine</span>
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+								<path d="M16.1717 8.34696L7.18279 17.3359"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M8.93576 8.36228L16.1712 8.3467L16.1562 15.5828"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
 		</div>
 		@@include('html/_js.htm',{})
 	</body>

@@ -4,6 +4,19 @@ import { isMobile } from "./functions.js";
 import { flsModules } from "./modules.js";
 
 
+// international tel input ======================================
+const inputPhone = document.querySelector(".phone_input");
+if (inputPhone) {
+  intlTelInput(inputPhone, {
+      utilsScript: "files/intl_tel_input/js/utils.js",
+      customPlaceholder: function(selectedCountryPlaceholder, selectedCountryData) {
+        return "+";
+      },
+      
+  });
+}
+// ================================================================
+
 const menuSubMenuItem = document.querySelector('.menu__item-sub-menu');
 
 if (menuSubMenuItem) {
@@ -195,3 +208,25 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
+
+// == Add class _hidden to .links-prod (pages: products, eCommerce, identification, detection, gorernance, careers)
+const linksProd = document.querySelector('.links-prod');
+if (linksProd) {
+  const footer = document.querySelector('.footer');
+  const links = document.querySelector('.links-prod');
+  const options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0
+  };
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        links.classList.add('_hidden');
+      } else {
+        links.classList.remove('_hidden');
+      }
+    });
+  }, options);
+  observer.observe(footer);
+}
