@@ -397,6 +397,27 @@
       }
     }
   }
+    // .link-btn_03
+  &_03 {
+    color: $mainGray;
+    @media (max-width:$mobileSmall){
+       border-color: $white; 
+    }
+    svg {
+      path {
+        @media (min-width:$mobileSmall){
+          stroke: $mainGray;
+        }
+      }
+    }
+    span {
+      &::before {
+        @media (min-width:$mobileSmall){
+          background-color: $mainGray !important;
+        }
+      }
+    }
+  }
 }
 
 // Main section VIDEO navigation block -----------------
@@ -905,6 +926,7 @@
         width: 100%;
         height: toRem(55);
         justify-content: center;
+        margin-top: toRem(20);
     }
   }
   // .head-block__link-txt
@@ -1459,9 +1481,6 @@
   position: relative;
   @include adaptiveValue("min-height", 750, 560,0,1920,1440);
   @include adaptiveValue("min-height", 560, 450,3,1440,375);
-  .page-governance & {
-    margin-bottom: unset !important;
-  }
   // .get__im
   &__img {
     position: absolute;
