@@ -8,6 +8,7 @@ import { flsModules } from "./modules.js";
 const inputPhone = document.querySelector(".phone_input");
 if (inputPhone) {
   intlTelInput(inputPhone, {
+      initialCountry: 'us',
       utilsScript: "files/intl_tel_input/js/utils.js",
       customPlaceholder: function(selectedCountryPlaceholder, selectedCountryData) {
         return "+";
