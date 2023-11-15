@@ -872,38 +872,6 @@
       }
     }
   }
-  // .products-comparison__links
-  &__links {
-    display: flex;
-    gap: toRem(20);
-    @include adaptiveValue("margin-bottom", 80, 40);
-    @media (min-width:$mobileSmall){
-      justify-content: space-between;
-    }
-    @media (max-width:$mobileSmall){
-       flex-direction: column; 
-    }
-  }
-  // .products-comparison__link
-  &__link {
-  }
-  // .products-comparison__body
-  &__body {
-    display: grid;
-    gap: toRem(20);
-    @media (min-width:em(1250.98)){
-      grid-template-columns: repeat(4, 1fr);
-    }
-    @media (max-width: em(1250.98)) and (min-width: em(750.98)) {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    @media (max-width: em(750.98)){
-        grid-template-columns: 1fr;
-    }
-  }
-  // .products-comparison__item
-  &__item {
-  }
 }
 
 .item-comparison {
@@ -966,6 +934,60 @@
   // .item-comparison__txt
   &__txt {
   }
+}
+
+.tab-products {
+  // .tab-products__navigation
+  &__navigation {
+    display: flex;
+    gap: toRem(20);
+    @include adaptiveValue("margin-bottom", 80, 40);
+      justify-content: space-between;
+  }
+  // .tab-products__title
+  &__title {
+    color: $mainGray;
+    path {
+      stroke: $mainGray;
+    }
+    &._tab-active {
+      color: $white;
+      span {
+        @media (min-width:$mobileSmall){
+          border-bottom: toRem(3) solid $white;
+        }
+        @media (max-width:$mobileSmall){
+          border-bottom: toRem(1) solid $white;
+        }
+      }
+      path {
+        stroke: $white;
+      }
+    }
+  }
+  // .tab-products__content
+  &__content {
+  }
+  // .tab-products__body
+  &__body {
+  }
+	// .tab-products__wrapper
+	&__wrapper {
+    display: grid;
+    gap: toRem(20);
+    @media (min-width:em(1250.98)){
+      grid-template-columns: repeat(4, 1fr);
+    }
+    @media (max-width: em(1250.98)) and (min-width: em(750.98)) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: em(750.98)){
+        grid-template-columns: 1fr;
+    }
+	}
+	// .tab-products__item
+	&__item {
+	}
 }
 
 

@@ -10,7 +10,7 @@
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20231114103716">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231115143257">
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -57,18 +57,18 @@
 															<img class="sub-menu__arr-2 color-green" src="img/icons/arr-angle.svg" alt="arrow">
 														</span>
 													</a></li>
-												<li class="sub-menu__item"><a href="ai-detection.html" class="sub-menu__link">
-														<span class="sub-menu__txt _hover">AI Detection</span>
-														<span class="sub-menu__arr">
-															<img class="sub-menu__arr-1 color-pink" src="img/icons/arr-angle.svg" alt="arrow">
-															<img class="sub-menu__arr-2 color-pink" src="img/icons/arr-angle.svg" alt="arrow">
-														</span>
-													</a></li>
 												<li class="sub-menu__item"><a href="ai-identification.html" class="sub-menu__link">
-														<span class="sub-menu__txt _hover">AI Identification</span>
+														<span class="sub-menu__txt _hover">AI Content Identification</span>
 														<span class="sub-menu__arr">
 															<img class="sub-menu__arr-1 color-orange" src="img/icons/arr-angle.svg" alt="arrow">
 															<img class="sub-menu__arr-2 color-orange" src="img/icons/arr-angle.svg" alt="arrow">
+														</span>
+													</a></li>
+												<li class="sub-menu__item"><a href="ai-detection.html" class="sub-menu__link">
+														<span class="sub-menu__txt _hover">AI Source Detection</span>
+														<span class="sub-menu__arr">
+															<img class="sub-menu__arr-1 color-pink" src="img/icons/arr-angle.svg" alt="arrow">
+															<img class="sub-menu__arr-2 color-pink" src="img/icons/arr-angle.svg" alt="arrow">
 														</span>
 													</a></li>
 												<li class="sub-menu__item"><a href="ecommerce.html" class="sub-menu__link">
@@ -102,7 +102,7 @@
 					</nav>
 					<div class="menu__texts">
 						<p class="menu__txt">Polygraf AI provides AI Governance, AI + Data Integrity & Content Authentication solutions through a Zero Trust
-							on-prem user interface</p>
+							on-prem user interface.</p>
 					</div>
 				</div>
 			</div>
@@ -721,7 +721,7 @@
 										<img data-src="img/icons/detection.svg" alt="icon">
 									</span>
 									<h3 class="prod-block__title txt-smx">
-										<span class="_hover">AI Identification</span>
+										<span class="_hover">AI Content Identification</span>
 									</h3>
 									<svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36" fill="none">
 										<path d="M24.488 12.5792L10.8764 26.1908" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -773,189 +773,378 @@
 							</span>
 						</a>
 					</div>
-					<div class="products-comparison__links">
-						<a href="products.html" class="products-comparison__link link-btn link-btn_02 _hover-el">
-							<span class="_hover">Product features</span>
-							<svg xmlns="http://www.w3.org/2000/svg" width="136" height="135" viewBox="0 0 136 135" fill="none">
-								<path d="M94.9526 46.161L42.4506 98.663" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round" />
-								<path d="M52.6922 46.2517L94.9527 46.1607L94.8652 88.4248" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round" />
-							</svg>
-						</a>
-						<a href="products.html" class="products-comparison__link link-btn link-btn_03 _hover-el">
-							<span class="_hover">Product benefits</span>
-							<svg xmlns="http://www.w3.org/2000/svg" width="136" height="135" viewBox="0 0 136 135" fill="none">
-								<path d="M94.9526 46.161L42.4506 98.663" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round" />
-								<path d="M52.6922 46.2517L94.9527 46.1607L94.8652 88.4248" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round" />
-							</svg>
-						</a>
-					</div>
-					<div class="products-comparison__body">
-						<article class="products-comparison__item item-comparison">
-							<a href="#" class="item-comparison__link _hover-el">
-								<img class="item-comparison__ic" data-src="img/icons/extension.svg" alt="icon">
-								<h3>
-									<span class="_hover txt-smx">Browser Extension</span>
-								</h3>
-								<svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36" fill="none">
-									<path d="M24.488 12.4688L10.8764 26.0805" stroke="#0A0A0A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-									<path d="M13.5311 12.492L24.4875 12.4684L24.4648 23.4258" stroke="#0A0A0A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+					<div data-tabs class="tab-products">
+						<nav data-tabs-titles class="tab-products__navigation">
+							<button type="button" class="tab-products__title link-btn  _tab-active">
+								<span>Product features</span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="136" height="135" viewBox="0 0 136 135" fill="none">
+									<path d="M94.9526 46.161L42.4506 98.663" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M52.6922 46.2517L94.9527 46.1607L94.8652 88.4248" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round" />
 								</svg>
-							</a>
-							<div class="item-comparison__body">
-								<ul class="item-comparison__list">
-									<li class="item-comparison__li">
-										<p class="item-comparison__num txt-smx">01</p>
-										<p class="item-comparison__txt txt-22">
-											Advanced AI Algorithms with real-time detection
-										</p>
-									</li>
-									<li class="item-comparison__li">
-										<p class="item-comparison__num txt-smx">02</p>
-										<p class="item-comparison__txt txt-22">
-											Advanced AI Algorithms with real-time detection
-										</p>
-									</li>
-									<li class="item-comparison__li">
-										<p class="item-comparison__num txt-smx">03</p>
-										<p class="item-comparison__txt txt-22">
-											Advanced AI Algorithms with real-time detection
-										</p>
-									</li>
-									<li class="item-comparison__li">
-										<p class="item-comparison__num txt-smx">04</p>
-										<p class="item-comparison__txt txt-22">
-											Advanced AI Algorithms with real-time detection
-										</p>
-									</li>
-								</ul>
-							</div>
-						</article>
-						<article class="products-comparison__item item-comparison">
-							<a href="#" class="item-comparison__link _hover-el">
-								<img class="item-comparison__ic" data-src="img/icons/plagiarism.svg" alt="icon">
-								<h3>
-									<span class="_hover txt-smx">Plagiarism Detection</span>
-								</h3>
-								<svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36" fill="none">
-									<path d="M24.488 12.4688L10.8764 26.0805" stroke="#0A0A0A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-									<path d="M13.5311 12.492L24.4875 12.4684L24.4648 23.4258" stroke="#0A0A0A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+							</button>
+							<button type="button" class="tab-products__title link-btn">
+								<span>Product benefits</span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="136" height="135" viewBox="0 0 136 135" fill="none">
+									<path d="M94.9526 46.161L42.4506 98.663" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M52.6922 46.2517L94.9527 46.1607L94.8652 88.4248" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round" />
 								</svg>
-							</a>
-							<div class="item-comparison__body">
-								<ul class="item-comparison__list">
-									<li class="item-comparison__li">
-										<p class="item-comparison__num txt-smx">01</p>
-										<p class="item-comparison__txt txt-22">
-											Advanced AI Algorithms with real-time detection
-										</p>
-									</li>
-									<li class="item-comparison__li">
-										<p class="item-comparison__num txt-smx">02</p>
-										<p class="item-comparison__txt txt-22">
-											Advanced AI Algorithms with real-time detection
-										</p>
-									</li>
-									<li class="item-comparison__li">
-										<p class="item-comparison__num txt-smx">03</p>
-										<p class="item-comparison__txt txt-22">
-											Advanced AI Algorithms with real-time detection
-										</p>
-									</li>
-									<li class="item-comparison__li">
-										<p class="item-comparison__num txt-smx">04</p>
-										<p class="item-comparison__txt txt-22">
-											Advanced AI Algorithms with real-time detection
-										</p>
-									</li>
-									<li class="item-comparison__li">
-										<p class="item-comparison__num txt-smx">05</p>
-										<p class="item-comparison__txt txt-22">
-											Advanced AI Algorithms with real-time detection
-										</p>
-									</li>
-									<li class="item-comparison__li">
-										<p class="item-comparison__num txt-smx">06</p>
-										<p class="item-comparison__txt txt-22">
-											Advanced AI Algorithms with real-time detection
-										</p>
-									</li>
-								</ul>
+							</button>
+						</nav>
+						<div data-tabs-body class="tab-products__content">
+							<div class="tab-products__body">
+								<div class="tab-products__wrapper">
+									<article class="tab-products__item item-comparison">
+										<a href="ai-governance.html" class="item-comparison__link _hover-el">
+											<img class="item-comparison__ic" data-src="img/icons/governance.svg" alt="icon">
+											<h3>
+												<span class="_hover txt-smx">AI Governance</span>
+											</h3>
+											<svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36" fill="none">
+												<path d="M24.488 12.4688L10.8764 26.0805" stroke="#0A0A0A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+												<path d="M13.5311 12.492L24.4875 12.4684L24.4648 23.4258" stroke="#0A0A0A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</a>
+										<div class="item-comparison__body">
+											<ul class="item-comparison__list">
+												<li class="item-comparison__li">
+													<p class="item-comparison__num txt-smx">01</p>
+													<p class="item-comparison__txt txt-22">
+														Empower Innovation
+													</p>
+												</li>
+												<li class="item-comparison__li">
+													<p class="item-comparison__num txt-smx">02</p>
+													<p class="item-comparison__txt txt-22">
+														Meet Regulatory Compliance Requirements
+													</p>
+												</li>
+												<li class="item-comparison__li">
+													<p class="item-comparison__num txt-smx">03</p>
+													<p class="item-comparison__txt txt-22">
+														Manage Data Risk
+													</p>
+												</li>
+												<li class="item-comparison__li">
+													<p class="item-comparison__num txt-smx">04</p>
+													<p class="item-comparison__txt txt-22">
+														Enhanced Trust
+													</p>
+												</li>
+											</ul>
+										</div>
+									</article>
+									<article class="tab-products__item item-comparison">
+										<a href="ai-detection.html" class="item-comparison__link _hover-el">
+											<img class="item-comparison__ic" data-src="img/icons/plagiarism.svg" alt="icon">
+											<h3>
+												<span class="_hover txt-smx">AI Source Detection</span>
+											</h3>
+											<svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36" fill="none">
+												<path d="M24.488 12.4688L10.8764 26.0805" stroke="#0A0A0A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+												<path d="M13.5311 12.492L24.4875 12.4684L24.4648 23.4258" stroke="#0A0A0A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</a>
+										<div class="item-comparison__body">
+											<ul class="item-comparison__list">
+												<li class="item-comparison__li">
+													<p class="item-comparison__num txt-smx">01</p>
+													<p class="item-comparison__txt txt-22">
+														Proactively address IP issues
+													</p>
+												</li>
+												<li class="item-comparison__li">
+													<p class="item-comparison__num txt-smx">02</p>
+													<p class="item-comparison__txt txt-22">
+														Protect Intellectual Property
+													</p>
+												</li>
+												<li class="item-comparison__li">
+													<p class="item-comparison__num txt-smx">03</p>
+													<p class="item-comparison__txt txt-22">
+														Verify Authenticity and Ownership
+													</p>
+												</li>
+												<li class="item-comparison__li">
+													<p class="item-comparison__num txt-smx">04</p>
+													<p class="item-comparison__txt txt-22">
+														Optimize Productivity and Streamline Content Review
+													</p>
+												</li>
+												<li class="item-comparison__li">
+													<p class="item-comparison__num txt-smx">05</p>
+													<p class="item-comparison__txt txt-22">
+														Create Original Content
+													</p>
+												</li>
+											</ul>
+										</div>
+									</article>
+									<article class="tab-products__item item-comparison">
+										<a href="ai-identification.html" class="item-comparison__link _hover-el">
+											<img class="item-comparison__ic" data-src="img/icons/detection.svg" alt="icon">
+											<h3>
+												<span class="_hover txt-smx">AI Content Identification</span>
+											</h3>
+											<svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36" fill="none">
+												<path d="M24.488 12.4688L10.8764 26.0805" stroke="#0A0A0A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+												<path d="M13.5311 12.492L24.4875 12.4684L24.4648 23.4258" stroke="#0A0A0A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</a>
+										<div class="item-comparison__body">
+											<ul class="item-comparison__list">
+												<li class="item-comparison__li">
+													<p class="item-comparison__num txt-smx">01</p>
+													<p class="item-comparison__txt txt-22">
+														Enterprises
+													</p>
+												</li>
+												<li class="item-comparison__li">
+													<p class="item-comparison__num txt-smx">02</p>
+													<p class="item-comparison__txt txt-22">
+														Combat Misinformation
+														and Deep Fake content
+													</p>
+												</li>
+												<li class="item-comparison__li">
+													<p class="item-comparison__num txt-smx">03</p>
+													<p class="item-comparison__txt txt-22">
+														Aggregate Content
+													</p>
+												</li>
+												<li class="item-comparison__li">
+													<p class="item-comparison__num txt-smx">04</p>
+													<p class="item-comparison__txt txt-22">
+														Enable Academic Trustworthiness
+													</p>
+												</li>
+											</ul>
+										</div>
+									</article>
+									<article class="tab-products__item item-comparison">
+										<a href="ecommerce.html" class="item-comparison__link _hover-el">
+											<img class="item-comparison__ic" data-src="img/icons/extension.svg" alt="icon">
+											<h3>
+												<span class="_hover txt-smx">eCommerce Trust Engine</span>
+											</h3>
+											<svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36" fill="none">
+												<path d="M24.488 12.4688L10.8764 26.0805" stroke="#0A0A0A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+												<path d="M13.5311 12.492L24.4875 12.4684L24.4648 23.4258" stroke="#0A0A0A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</a>
+										<div class="item-comparison__body">
+											<ul class="item-comparison__list">
+												<li class="item-comparison__li">
+													<p class="item-comparison__num txt-smx">01</p>
+													<p class="item-comparison__txt txt-22">
+														Real-time Authentication
+													</p>
+												</li>
+												<li class="item-comparison__li">
+													<p class="item-comparison__num txt-smx">02</p>
+													<p class="item-comparison__txt txt-22">
+														Reliability Assessment
+													</p>
+												</li>
+												<li class="item-comparison__li">
+													<p class="item-comparison__num txt-smx">03</p>
+													<p class="item-comparison__txt txt-22">
+														Trust Scores
+													</p>
+												</li>
+												<li class="item-comparison__li">
+													<p class="item-comparison__num txt-smx">04</p>
+													<p class="item-comparison__txt txt-22">
+														Unparalleled Accuracy
+													</p>
+												</li>
+											</ul>
+										</div>
+									</article>
+								</div>
 							</div>
-						</article>
-						<article class="products-comparison__item item-comparison">
-							<a href="#" class="item-comparison__link _hover-el">
-								<img class="item-comparison__ic" data-src="img/icons/detection.svg" alt="icon">
-								<h3>
-									<span class="_hover txt-smx">Picture to Text Verification</span>
-								</h3>
-								<svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36" fill="none">
-									<path d="M24.488 12.4688L10.8764 26.0805" stroke="#0A0A0A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-									<path d="M13.5311 12.492L24.4875 12.4684L24.4648 23.4258" stroke="#0A0A0A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-								</svg>
-							</a>
-							<div class="item-comparison__body">
-								<ul class="item-comparison__list">
-									<li class="item-comparison__li">
-										<p class="item-comparison__num txt-smx">01</p>
-										<p class="item-comparison__txt txt-22">
-											Advanced AI Algorithms with real-time detection
-										</p>
-									</li>
-									<li class="item-comparison__li">
-										<p class="item-comparison__num txt-smx">02</p>
-										<p class="item-comparison__txt txt-22">
-											Advanced AI Algorithms with real-time detection
-										</p>
-									</li>
-									<li class="item-comparison__li">
-										<p class="item-comparison__num txt-smx">03</p>
-										<p class="item-comparison__txt txt-22">
-											Advanced AI Algorithms with real-time detection
-										</p>
-									</li>
-									<li class="item-comparison__li">
-										<p class="item-comparison__num txt-smx">04</p>
-										<p class="item-comparison__txt txt-22">
-											Advanced AI Algorithms with real-time detection
-										</p>
-									</li>
-								</ul>
+							<div class="tab-products__body">
+								<div class="tab-products__wrapper">
+									<article class="tab-products__item item-comparison">
+										<a href="ai-governance.html" class="item-comparison__link _hover-el">
+											<img class="item-comparison__ic" data-src="img/icons/governance.svg" alt="icon">
+											<h3>
+												<span class="_hover txt-smx">AI Governance</span>
+											</h3>
+											<svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36" fill="none">
+												<path d="M24.488 12.4688L10.8764 26.0805" stroke="#0A0A0A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+												<path d="M13.5311 12.492L24.4875 12.4684L24.4648 23.4258" stroke="#0A0A0A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</a>
+										<div class="item-comparison__body">
+											<ul class="item-comparison__list">
+												<li class="item-comparison__li">
+													<p class="item-comparison__num txt-smx">01</p>
+													<p class="item-comparison__txt txt-22">
+														Proprietary AI & Data Governance Solution
+													</p>
+												</li>
+												<li class="item-comparison__li">
+													<p class="item-comparison__num txt-smx">02</p>
+													<p class="item-comparison__txt txt-22">
+														Zero Trust Architecture
+													</p>
+												</li>
+												<li class="item-comparison__li">
+													<p class="item-comparison__num txt-smx">03</p>
+													<p class="item-comparison__txt txt-22">
+														Seamless Integration
+													</p>
+												</li>
+												<li class="item-comparison__li">
+													<p class="item-comparison__num txt-smx">04</p>
+													<p class="item-comparison__txt txt-22">
+														Real-time Data Privacy & Confidentiality Protection
+													</p>
+												</li>
+												<li class="item-comparison__li">
+													<p class="item-comparison__num txt-smx">05</p>
+													<p class="item-comparison__txt txt-22">
+														Secure Data & Encryption
+													</p>
+												</li>
+												<li class="item-comparison__li">
+													<p class="item-comparison__num txt-smx">06</p>
+													<p class="item-comparison__txt txt-22">
+														Integration with Large Language Models
+													</p>
+												</li>
+												<li class="item-comparison__li">
+													<p class="item-comparison__num txt-smx">07</p>
+													<p class="item-comparison__txt txt-22">
+														Multi-Format Input Compatibility
+													</p>
+												</li>
+											</ul>
+										</div>
+									</article>
+									<article class="tab-products__item item-comparison">
+										<a href="ai-detection.html" class="item-comparison__link _hover-el">
+											<img class="item-comparison__ic" data-src="img/icons/plagiarism.svg" alt="icon">
+											<h3>
+												<span class="_hover txt-smx">AI Source Detection</span>
+											</h3>
+											<svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36" fill="none">
+												<path d="M24.488 12.4688L10.8764 26.0805" stroke="#0A0A0A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+												<path d="M13.5311 12.492L24.4875 12.4684L24.4648 23.4258" stroke="#0A0A0A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</a>
+										<div class="item-comparison__body">
+											<ul class="item-comparison__list">
+												<li class="item-comparison__li">
+													<p class="item-comparison__num txt-smx">01</p>
+													<p class="item-comparison__txt txt-22">
+														Forensic linguistic analysis
+													</p>
+												</li>
+												<li class="item-comparison__li">
+													<p class="item-comparison__num txt-smx">02</p>
+													<p class="item-comparison__txt txt-22">
+														Multi-format Support
+													</p>
+												</li>
+												<li class="item-comparison__li">
+													<p class="item-comparison__num txt-smx">03</p>
+													<p class="item-comparison__txt txt-22">
+														Intuitive Interface with In-Depth Analytics
+													</p>
+												</li>
+												<li class="item-comparison__li">
+													<p class="item-comparison__num txt-smx">04</p>
+													<p class="item-comparison__txt txt-22">
+														API Integration
+													</p>
+												</li>
+											</ul>
+										</div>
+									</article>
+									<article class="tab-products__item item-comparison">
+										<a href="ai-identification.html" class="item-comparison__link _hover-el">
+											<img class="item-comparison__ic" data-src="img/icons/detection.svg" alt="icon">
+											<h3>
+												<span class="_hover txt-smx">AI Content Identification</span>
+											</h3>
+											<svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36" fill="none">
+												<path d="M24.488 12.4688L10.8764 26.0805" stroke="#0A0A0A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+												<path d="M13.5311 12.492L24.4875 12.4684L24.4648 23.4258" stroke="#0A0A0A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</a>
+										<div class="item-comparison__body">
+											<ul class="item-comparison__list">
+												<li class="item-comparison__li">
+													<p class="item-comparison__num txt-smx">01</p>
+													<p class="item-comparison__txt txt-22">
+														Proprietary AI Protocols
+													</p>
+												</li>
+												<li class="item-comparison__li">
+													<p class="item-comparison__num txt-smx">02</p>
+													<p class="item-comparison__txt txt-22">
+														Real-time Detection
+													</p>
+												</li>
+												<li class="item-comparison__li">
+													<p class="item-comparison__num txt-smx">03</p>
+													<p class="item-comparison__txt txt-22">
+														Probability Assessment
+													</p>
+												</li>
+												<li class="item-comparison__li">
+													<p class="item-comparison__num txt-smx">04</p>
+													<p class="item-comparison__txt txt-22">
+														Seamless Integration
+													</p>
+												</li>
+											</ul>
+										</div>
+									</article>
+									<article class="tab-products__item item-comparison">
+										<a href="ecommerce.html" class="item-comparison__link _hover-el">
+											<img class="item-comparison__ic" data-src="img/icons/extension.svg" alt="icon">
+											<h3>
+												<span class="_hover txt-smx">eCommerce Trust Engine</span>
+											</h3>
+											<svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36" fill="none">
+												<path d="M24.488 12.4688L10.8764 26.0805" stroke="#0A0A0A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+												<path d="M13.5311 12.492L24.4875 12.4684L24.4648 23.4258" stroke="#0A0A0A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</a>
+										<div class="item-comparison__body">
+											<ul class="item-comparison__list">
+												<li class="item-comparison__li">
+													<p class="item-comparison__num txt-smx">01</p>
+													<p class="item-comparison__txt txt-22">
+														Real-time Authentication
+													</p>
+												</li>
+												<li class="item-comparison__li">
+													<p class="item-comparison__num txt-smx">02</p>
+													<p class="item-comparison__txt txt-22">
+														Reliability Assessment
+													</p>
+												</li>
+												<li class="item-comparison__li">
+													<p class="item-comparison__num txt-smx">03</p>
+													<p class="item-comparison__txt txt-22">
+														Trust Scores
+													</p>
+												</li>
+												<li class="item-comparison__li">
+													<p class="item-comparison__num txt-smx">04</p>
+													<p class="item-comparison__txt txt-22">
+														Unparalleled Accuracy
+													</p>
+												</li>
+											</ul>
+										</div>
+									</article>
+								</div>
 							</div>
-						</article>
-						<article class="products-comparison__item item-comparison">
-							<a href="#" class="item-comparison__link _hover-el">
-								<img class="item-comparison__ic" data-src="img/icons/governance.svg" alt="icon">
-								<h3>
-									<span class="_hover txt-smx">AI-G Solution</span>
-								</h3>
-								<svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36" fill="none">
-									<path d="M24.488 12.4688L10.8764 26.0805" stroke="#0A0A0A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-									<path d="M13.5311 12.492L24.4875 12.4684L24.4648 23.4258" stroke="#0A0A0A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-								</svg>
-							</a>
-							<div class="item-comparison__body">
-								<ul class="item-comparison__list">
-									<li class="item-comparison__li">
-										<p class="item-comparison__num txt-smx">01</p>
-										<p class="item-comparison__txt txt-22">
-											Advanced AI Algorithms with real-time detection
-										</p>
-									</li>
-									<li class="item-comparison__li">
-										<p class="item-comparison__num txt-smx">02</p>
-										<p class="item-comparison__txt txt-22">
-											Advanced AI Algorithms with real-time detection
-										</p>
-									</li>
-									<li class="item-comparison__li">
-										<p class="item-comparison__num txt-smx">03</p>
-										<p class="item-comparison__txt txt-22">
-											Advanced AI Algorithms with real-time detection
-										</p>
-									</li>
-								</ul>
-							</div>
-						</article>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -1027,13 +1216,13 @@
 							<h2 class="footer__title txt-smx txt-smx_f-7">Products</h2>
 							<ul class="footer__list">
 								<li class="footer__item">
+									<a href="ai-governance.html" class="footer__link txt-smx txt-smx_f-4 _hover">AI Governance</a>
+								</li>
+								<li class="footer__item">
+									<a href="ai-identification.html" class="footer__link txt-smx txt-smx_f-4 _hover">AI Content Identification</a>
+								</li>
+								<li class="footer__item">
 									<a href="ai-detection.html" class="footer__link txt-smx txt-smx_f-4 _hover">AI Source Detection</a>
-								</li>
-								<li class="footer__item">
-									<a href="ai-identification.html" class="footer__link txt-smx txt-smx_f-4 _hover">Ai Content Identification</a>
-								</li>
-								<li class="footer__item">
-									<a href="ai-governance.html" class="footer__link txt-smx txt-smx_f-4 _hover">AI-G Solution</a>
 								</li>
 								<li class="footer__item">
 									<a href="ecommerce.html" class="footer__link txt-smx txt-smx_f-4 _hover">eCommerce Trust Engine</a>
@@ -1112,7 +1301,7 @@
 						</svg>
 					</a>
 					<a href="ai-identification.html" class="links-prod__link link-03 _hover-el">
-						<span class="_hover">AI Identification</span>
+						<span class="_hover">AI Content Identification</span>
 						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
 							<path d="M16.1717 8.34696L7.18279 17.3359" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 							<path d="M8.93576 8.36228L16.1712 8.3467L16.1562 15.5828" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -1129,7 +1318,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20231114103716"></script>
+	<script src="js/app.min.js?_v=20231115143257"></script>
 </body>
 
 </html>
