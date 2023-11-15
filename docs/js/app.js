@@ -5184,10 +5184,10 @@
             const popupJobForm = document.getElementById("popupJobForm");
             if (popupJobForm) {
                 function copyJobInfo(event) {
-                    const itemJobs = event.currentTarget.closest(".item-jobs");
+                    const itemJobs = event.currentTarget.closest(".careers-jobs__item");
                     const jobPosition = itemJobs.querySelector(".item-jobs__position h3").textContent;
-                    const jobLocation = itemJobs.querySelector(".head-job__txt-b.job-location p").textContent;
-                    const jobType = itemJobs.querySelector(".head-job__txt-b.job-type p").textContent;
+                    const jobLocation = itemJobs.querySelector(".job-location p").textContent;
+                    const jobType = itemJobs.querySelector(".job-type p").textContent;
                     const popupJobPosition = popupJobForm.querySelector(".popup-form-position");
                     const popupJobLocation = popupJobForm.querySelector(".popup-form-location");
                     const popupJobType = popupJobForm.querySelector(".popup-form-job");

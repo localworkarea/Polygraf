@@ -183,13 +183,13 @@ document.addEventListener("DOMContentLoaded", function() {
     // Функция для копирования информации из item-jobs в попап
     function copyJobInfo(event) {
       
-      // Найдите ближайший родительский элемент .item-jobs
-      const itemJobs = event.currentTarget.closest(".item-jobs");
+      // Найдите ближайший родительский элемент .careers-jobs__item
+      const itemJobs = event.currentTarget.closest(".careers-jobs__item");
       
       // Получите информацию, которую нужно скопировать, из .item-jobs
       const jobPosition = itemJobs.querySelector(".item-jobs__position h3").textContent;
-      const jobLocation = itemJobs.querySelector(".head-job__txt-b.job-location p").textContent;
-      const jobType = itemJobs.querySelector(".head-job__txt-b.job-type p").textContent;
+      const jobLocation = itemJobs.querySelector(".job-location p").textContent;
+      const jobType = itemJobs.querySelector(".job-type p").textContent;
   
       // Найдите соответствующие элементы в попапе
       const popupJobPosition = popupJobForm.querySelector(".popup-form-position");

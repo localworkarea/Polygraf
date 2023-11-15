@@ -2584,20 +2584,48 @@
   }
   // .careers-jobs__item
   &__item {
+    position: relative;
+    color: $white;
+    @include adaptiveValue("padding-bottom", 100, 75,0,1920,1440);
+    @include adaptiveValue("padding-bottom", 75, 20,3,1440,375);
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 100, 75,0,1920,1440);
+      @include adaptiveValue("margin-bottom", 75, 20,3,1440,375);
+    }
+    &::before {
+      background-color: #3B3B3B !important;
+    }
+  }
+  // .careers-jobs__link
+  &__link {
+  }
+  // .careers-jobs__details
+  &__details {
+    cursor: pointer;
+    @media (max-width: em(700.98)){
+        margin-bottom: toRem(20);
+    }
+  }
+  // .careers-jobs__summary
+  &__summary {
+    &._spoller-active {
+      .item-jobs__btn-details {
+        svg {
+          transform: rotate(-180deg);
+        }
+      }
+    }
+  }
+  // .careers-jobs__wrapper
+  &__wrapper {
+  }
+  // .careers-jobs__info
+  &__info {
   }
 }
 
+
 .item-jobs {
-  color: $white;
-  @include adaptiveValue("padding-bottom", 100, 75,0,1920,1440);
-  @include adaptiveValue("padding-bottom", 75, 20,3,1440,375);
-  &:not(:last-child) {
-    @include adaptiveValue("margin-bottom", 100, 75,0,1920,1440);
-    @include adaptiveValue("margin-bottom", 75, 20,3,1440,375);
-  }
-  &::before {
-    background-color: #3B3B3B !important;
-  }
   display: grid;
   gap: toRem(20);
   @media (min-width:em(750.98)){
@@ -2608,12 +2636,35 @@
   }
   // .item-jobs__position
   &__position {
+    display: block;
     h3 {
        @include adaptiveValue("max-width", 690, 520,0,1920,1440);
       @include adaptiveValue("font-size", 60, 45,0,1920,1440);
       @include adaptiveValue("font-size", 45, 32,3,1440,375);
       line-height: 1.1;
       @include adaptiveValue("letter-spacing", -1.8, -0.96);
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: toRem(1);
+        background-color: white;
+        transform: scale(0, 1);
+        transform-origin: 100% 50%;
+        transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+      }
+      @media (any-hover: hover){
+        &:hover{
+          &::before {
+            transform: scale(1);
+            transform-origin: 0 50%;
+          }
+        }
+      }
     }
   }
   // .item-jobs__body
@@ -2629,9 +2680,11 @@
   }
   // .item-jobs__info
   &__info {
+    display: block;
   }
   // .item-jobs__head
   &__head {
+    display: block;
   }
   // .item-jobs__link
   &__link {
@@ -2642,6 +2695,15 @@
   }
   // .item-jobs__btn
   &__btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+
+    @include adaptiveValue("font-size", 36, 18,0,1920,1440);
+    @include adaptiveValue("letter-spacing", -0.44, -0.36);
+
+    color: #fff;
     display: flex;
     align-items: center;
     span {
@@ -2652,14 +2714,15 @@
       }
     }
     svg {
-      @media (max-width:$mobileSmall){
+      @media (max-width:em(700.98)){
         display: none; 
       }
     }
-    @media (min-width:$mobileSmall){
+    @media (min-width:em(700.98)){
       height: fit-content;
     }
-    @media (max-width:$mobileSmall){
+    @media (max-width:em(700.98)){
+        position: relative;
         height: toRem(55);
         justify-content: center;
         width: 100%;
@@ -2667,6 +2730,23 @@
         color: $mainColor;        
     }
   }
+	// .item-jobs__btn-details
+	&__btn-details {
+    display: flex;
+    align-items: center;
+    svg {
+      @include adaptiveValue("width", 30, 25);
+      @include adaptiveValue("height", 30, 25);
+      transition: all .3s ease;
+    }
+    @media (min-width:$mobileSmall){
+      height: fit-content;
+      align-self: end;
+    }
+    @media (max-width:$mobileSmall){
+       justify-content: center; 
+    }
+	}
 }
 
 .head-job {
@@ -2689,9 +2769,113 @@
   }
   // .head-job__txt-b
   &__txt-b {
+    display: block;
     font-weight: 500;
   }
 }
+
+
+.info-job {
+  @include adaptiveValue("padding-top", 150, 110,0,1920,1440);
+  @include adaptiveValue("padding-top", 110, 40,3,1440,375);
+  // .info-job__line
+  &__line {
+    display: grid;
+    gap: toRem(20);
+    @media (min-width:$mobile){
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width:$mobile){
+      grid-template-columns: 1fr; 
+    }
+    &:not(:last-child) {
+      @include adaptiveValue("padding-bottom", 50, 30);
+      @include adaptiveValue("margin-bottom", 50, 30);
+      border-bottom: toRem(1) solid #3B3B3B;
+    }
+  }
+  // .info-job__block
+  &__block {
+  }
+  // .info-job__txt-01
+  &__txt-01 {
+    @include adaptiveValue("font-size", 36, 20);
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 40, 20);
+    }
+  }
+  // .info-job__txt-02
+  &__txt-02 {
+    max-width: toRem(600);
+    &:not(:last-child) {
+      margin-bottom: toRem(20);
+    }
+  }
+  // .info-job__txt-03
+  &__txt-03 {
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 40, 20);
+    }
+  }
+  // .info-job__txt-04
+  &__txt-04 {
+    @include adaptiveValue("font-size", 18, 16);
+    font-weight: 400;
+    line-height: 1.2;
+    &:not(:last-child) {
+      margin-bottom: toRem(20);
+    }
+  }
+  // .info-job__list
+  &__list {
+    &:not(:last-child) {
+      margin-bottom: toRem(40);
+    }
+  }
+  // .info-job__li
+  &__li {
+    position: relative;
+    @include adaptiveValue("padding-left", 40, 20);
+    &:before {
+      content: "";
+      position: absolute;
+      top: 9px;
+      @include adaptiveValue("left", 20, 10);
+      @include adaptiveValue("width", 4, 2.5);
+      @include adaptiveValue("height", 4, 2.5);
+      background-color: #fff;
+    }
+  }
+	// .info-job__link
+	&__link {
+    @media (min-width:em(700.98)){
+      display: flex;
+      height: 100%;
+      align-items: flex-end;
+      justify-content: flex-end;
+    }
+    @media (max-width: em(700.98)){
+        display: none;
+    }
+	}
+	// .info-job__btn
+	&__btn {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    svg {
+      @include adaptiveValue("width", 135, 50);
+      @include adaptiveValue("height", 135, 50);
+    }
+	}
+}
+.mrb-txt {
+  &:not(:last-child) {
+    margin-bottom: toRem(40);
+  }
+}
+
+
 
 
 // SECTION CAREERS-NEWS ---------------------------------------------------

@@ -180,7 +180,7 @@
 		@include adaptiveValue("padding-bottom", 20, 15);
 		display: grid;
 		align-items: center;
-		grid-template-columns: 1fr toRem(440);
+		grid-template-columns: 1fr toRem(470);
 		gap: toRem(16);
 		border-bottom: toRem(1) solid rgba(255, 255, 255, 0.20);
 		transition: all .3s ease;
@@ -315,7 +315,7 @@
 .menu {
 	@media (min-width:em(560.98)){
 		display: grid;
-		grid-template-columns: 1fr toRem(440);
+		grid-template-columns: 1fr toRem(470);
 		gap: toRem(16);
 	}
 	@media (max-width: em(1200.98)) and (min-width:em(560.98)){
